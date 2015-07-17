@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/epimorphism/code/rdt/.git'
+let g:netrw_dirhist_2='/home/epimorphism/code/rdt/config/deploy'
+let g:netrw_dirhist_3='/home/epimorphism/code/paulriddle.github.io/.code-highlighter-cache'

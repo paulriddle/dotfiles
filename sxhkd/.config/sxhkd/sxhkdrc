@@ -1,0 +1,77 @@
+# bspwm hotkeys
+
+super + shift + Escape
+	bspc quit
+
+# Close window
+super + shift + x
+	bspc window -c
+
+# Toggle monocle
+super + space
+	bspc desktop -l next
+
+# Balance tree
+super + shift + b
+	bspc desktop -B
+
+# Toggle tile
+super + {_,shift +} t
+	bspc window -t {floating,fullscreen}
+
+# Lock node
+super + shift + p
+
+# Focus the previous window
+alt + Tab
+	bspc window -f last
+
+# Focus {or swap} window
+super + {_,shift + }{h,j,k,l}
+	bspc window -{f,s} {left,down,up,right}
+
+# Preselect window for splitting
+super + alt + ctrl + {h,j,k,l}
+	bspc window -p {left,down,up,right}
+
+# Cancel preselections
+super + alt + ctrl + space
+	bspc desktop -c
+
+# Exapnd window
+super + ctrl + {h,j,k,l}
+	bspc window -e {left -10,down +10,up -10,right +10}
+
+# Contract window
+super + alt + shift + {h,j,k,l}
+	bspc window -e {right -10,up +10,down -10,left +10}
+
+# Rotate tree
+super + alt + {h,j,k,l}
+    bspc window -R {left,down,up,right} 90
+
+super + {s,f}
+    bspc window -t {floating,fullscreen}
+
+# Select {or transfer} desktop
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,window -d} ^{1-9,10}
+
+~button1
+	bspc pointer -g focus
+
+# Manipulate window
+alt + button{1-3}
+	bspc pointer -g {move,resize_side,resize_corner}
+
+# wm independent hotkeys
+
+alt + Return
+	urxvt
+
+alt + space
+	dmenu_run
+
+# Make sxhkd reload its configuration files:
+alt + Escape
+	pkill -USR1 -x sxhkd

@@ -1,0 +1,5 @@
+[user]
+	name = Paul Riddle
+	email = paulriddle@openmailbox.org
+[push]
+	default = simple
