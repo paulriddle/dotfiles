@@ -1,1 +1,1 @@
-set nocompatible
+set relativenumber

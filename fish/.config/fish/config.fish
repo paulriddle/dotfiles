@@ -1,5 +1,5 @@
 # Base16 color scheme
-eval sh $HOME/.config/base16-shell/base16-default.dark.sh
+eval sh $HOME/.config/base16-shell/base16-codeschool.dark.sh
 
 # Initialize rbenv
 source (rbenv init - | psub)
