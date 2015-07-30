@@ -7,10 +7,14 @@ To be used with a companion fish function like this:
 
 """
 
+from __future__ import print_function
+
+import json
 import os
 import subprocess
 import sys
 import tempfile
+
 
 def gen_script():
     fd, name = tempfile.mkstemp()
@@ -20,10 +24,14 @@ def gen_script():
     old_env = os.popen('/bin/bash -c "env"', 'r').read().splitlines()
 
     command = '{}; echo "{}"; env'.format(' '.join(sys.argv[1:]), divider)
-    stdout, new_env = (subprocess
-                       .check_output(['bash', '-c', command])
-                       .split(divider, 1))
+    output = subprocess.check_output(['bash', '-c', command])
+    if bytes != str and isinstance(output, bytes):
+        # on python 3
+        output = str(output, 'utf-8')
+    stdout, new_env = output.split(divider, 1)
     new_env = new_env.lstrip().splitlines()
+
+    new_env = [line for line in new_env if '{' not in line and '}' not in line]
 
     old_env = dict([line.split('=', 1) for line in old_env])
     new_env = dict([line.split('=', 1) for line in new_env])
@@ -47,7 +55,14 @@ def gen_script():
                     continue
             else:
                 continue
-            f.write('set -g -x %s %s\n' % (k, v.replace(':', ' ')))
+            if k == 'PATH':
+                # use json.dumps to reliably escape quotes and backslashes
+                value = ' '.join([json.dumps(directory)
+                                  for directory in v.split(':')])
+            else:
+                # use json.dumps to reliably escape quotes and backslashes
+                value = json.dumps(v)
+            f.write('set -g -x %s %s\n' % (k, value))
 
     return name
 
@@ -55,6 +70,6 @@ try:
     name = gen_script()
 except Exception as e:
     sys.stderr.write(str(e) + '\n')
-    print '__error'
+    print('__error')
 else:
-    print name
+    print(name)
