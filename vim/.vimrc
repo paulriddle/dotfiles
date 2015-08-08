@@ -9,6 +9,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 
 call neobundle#end()
@@ -24,7 +25,7 @@ set tabstop=2
 set shiftwidth=2
 set smartindent
 let mapleader=","
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp)$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
