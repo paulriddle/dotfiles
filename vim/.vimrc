@@ -10,7 +10,9 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'dag/vim-fish'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'jez/vim-superman'
 
 call neobundle#end()
 
