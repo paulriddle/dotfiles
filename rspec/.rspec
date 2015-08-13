@@ -1,6 +1,4 @@
 --color
---require spec_helper
 --format documentation
 --order rand
---fail-fast
 --warnings
