@@ -3,3 +3,5 @@
 	email = paulriddle@openmailbox.org
 [push]
 	default = simple
+[core]
+	editor = vim
