@@ -15,6 +15,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'jez/vim-superman'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'tpope/vim-commentary'
 
 call neobundle#end()
 
