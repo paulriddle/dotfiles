@@ -8,6 +8,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'othree/html5.vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'dag/vim-fish'
