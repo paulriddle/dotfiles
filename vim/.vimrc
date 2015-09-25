@@ -15,6 +15,8 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'jez/vim-superman'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'thoughtbot/vim-rspec'
 
 call neobundle#end()
 
@@ -38,6 +40,10 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 map <leader>f :CtrlP<cr>
+map <leader>t :call RunCurrentSpecFile()<cr>
+map <leader>s :call RunNearestSpecFile()<cr>
+map <leader>l :call RunLastSpec()<cr>
+map <leader>a :call RunAllSoecs()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
