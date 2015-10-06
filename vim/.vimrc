@@ -53,5 +53,5 @@ set number
 set relativenumber
 set cursorline
 let base16colorspace=256
-set background=light
-colorscheme base16-atelierheath
+set background=dark
+colorscheme base16-mocha
