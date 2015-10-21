@@ -19,6 +19,7 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'thoughtbot/vim-rspec'
 NeoBundle 'tpope/vim-commentary'
+NeoBundle 'rking/ag.vim'
 
 call neobundle#end()
 
