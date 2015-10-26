@@ -1,3 +1,0 @@
-xrdb -load ~/.Xresources
-xflux -l 58 -g 56.3 &
-urxvt &
