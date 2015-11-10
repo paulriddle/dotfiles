@@ -20,6 +20,8 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'thoughtbot/vim-rspec'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
@@ -33,6 +35,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set smartindent
+set shell=/bin/bash
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 " Enable JSX syntax highlighting in .js files instead of only .jsx files
