@@ -1,4 +1,4 @@
-eval sh $HOME/.config/base16-shell/base16-chalk.dark.sh
+eval sh $HOME/.config/base16-shell/base16-pop.dark.sh
 status --is-interactive; and . (rbenv init - | psub)
 start_agent
 
