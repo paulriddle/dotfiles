@@ -21,6 +21,9 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'cespare/vim-toml'
 
 call neobundle#end()
 
@@ -57,4 +60,4 @@ set relativenumber
 set cursorline
 let base16colorspace=256
 set background=dark
-colorscheme base16-chalk
+colorscheme corporation
