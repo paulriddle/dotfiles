@@ -1,5 +1,5 @@
 URxvt*scrollBar: false
-URxvt*font: xft:Ubuntu Mono:size=8
+URxvt*font: xft:Ubuntu Mono:size=10
 
 
 #define base00 #231f20
