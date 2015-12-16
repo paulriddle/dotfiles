@@ -47,11 +47,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-map <leader>f :CtrlP<cr>
-map <leader>t :call RunCurrentSpecFile()<cr>
-map <leader>s :call RunNearestSpecFile()<cr>
-map <leader>l :call RunLastSpec()<cr>
-map <leader>a :call RunAllSoecs()<cr>
+nnoremap <leader>f :CtrlP<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
