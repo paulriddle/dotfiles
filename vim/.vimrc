@@ -24,6 +24,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'cespare/vim-toml'
+NeoBundle 'exu/pgsql.vim'
 
 call neobundle#end()
 
@@ -42,6 +43,8 @@ let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 " Enable JSX syntax highlighting in .js files instead of only .jsx files
 let g:jsx_ext_required = 0
+" Set PostgreSQL syntax highlighting for all .sql files
+let g:sql_type_default = 'pgsql'
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
