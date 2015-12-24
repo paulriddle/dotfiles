@@ -25,6 +25,7 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'exu/pgsql.vim'
+NeoBundle 'flazz/vim-colorschemes'
 
 call neobundle#end()
 
@@ -57,6 +58,5 @@ nnoremap <leader>f :CtrlP<cr>
 set number
 set relativenumber
 set cursorline
-let base16colorspace=256
-set background=light
-colorscheme base16-atelierheath
+set background=dark
+colorscheme grb256
