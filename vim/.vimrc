@@ -8,8 +8,6 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'othree/html5.vim'
-NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'slim-template/vim-slim'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'jez/vim-superman'
@@ -22,10 +20,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fatih/vim-go'
-NeoBundle 'rust-lang/rust.vim'
-NeoBundle 'cespare/vim-toml'
 NeoBundle 'exu/pgsql.vim'
-NeoBundle 'flazz/vim-colorschemes'
 
 call neobundle#end()
 
@@ -39,6 +34,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set smartindent
+set textwidth=76
 set shell=/bin/bash
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
@@ -58,5 +54,6 @@ nnoremap <leader>f :CtrlP<cr>
 set number
 set relativenumber
 set cursorline
+let base16colorspace=256
 set background=dark
-colorscheme grb256
+colorscheme base16-default
