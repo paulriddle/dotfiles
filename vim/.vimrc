@@ -34,7 +34,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set smartindent
-set textwidth=76
+set textwidth=89
 set shell=/bin/bash
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
