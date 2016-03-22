@@ -32,9 +32,18 @@ syntax enable
 filetype plugin indent on
 set expandtab
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set smartindent
 set textwidth=89
+set showcmd
+set showmatch
+set langnoremap
+set incsearch
+set hlsearch
+set wildmenu
+set lazyredraw
+set foldenable
 set shell=/bin/bash
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
@@ -47,7 +56,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-nnoremap <leader>f :CtrlP<cr>
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader><space> :nohlsearch<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,4 +66,4 @@ set relativenumber
 set cursorline
 let base16colorspace=256
 set background=dark
-colorscheme base16-default
+colorscheme base16-chalk
