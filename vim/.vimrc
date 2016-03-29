@@ -1,33 +1,22 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NeoBundle configuration
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-call neobundle#begin(expand('~/.vim/bundle'))
-
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'dag/vim-fish'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'jez/vim-superman'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'mxw/vim-jsx'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'thoughtbot/vim-rspec'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'fatih/vim-go'
-NeoBundle 'exu/pgsql.vim'
-
-call neobundle#end()
-
-NeoBundleCheck
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" General preferences
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+Plug 'chriskempson/base16-vim'
+Plug 'othree/html5.vim'
+Plug  'dag/vim-fish'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'jez/vim-superman'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'vim-ruby/vim-ruby'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-commentary'
+Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
+Plug 'rking/ag.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'fatih/vim-go'
+Plug 'exu/pgsql.vim'
+Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
+call plug#end()
 syntax enable
 filetype plugin indent on
 set expandtab
@@ -44,26 +33,37 @@ set hlsearch
 set wildmenu
 set lazyredraw
 set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+set foldmethod=syntax
 set shell=/bin/bash
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
-" Enable JSX syntax highlighting in .js files instead of only .jsx files
 let g:jsx_ext_required = 0
-" Set PostgreSQL syntax highlighting for all .sql files
 let g:sql_type_default = 'pgsql'
-" Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-nnoremap <leader>f :CtrlP<CR>
-nnoremap <leader><space> :nohlsearch<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Appearance
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>f :CtrlP<cr>
+nnoremap <leader><space> :nohlsearch<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <space> za
+nnoremap j gj
+nnoremap k gk
+nnoremap B ^
+nnoremap E $
+nnoremap ^ <nop>
+nnoremap $ <nop>
+" highlight last inserted text
+nnoremap gV `[v`]
+inoremap jk <esc>
+nnoremap <leader>u :GundoToggle<cr>
+nnoremap <leader>s :mksession!<cr>
 set number
 set relativenumber
 set cursorline
 let base16colorspace=256
-set background=dark
-colorscheme base16-chalk
+set background=light
+colorscheme base16-apathy
