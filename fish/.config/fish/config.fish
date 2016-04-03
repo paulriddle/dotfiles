@@ -1,5 +1,5 @@
 if status --is-interactive
-  eval sh $HOME/.config/base16-shell/base16-apathy.light.sh
+  eval sh $HOME/.config/base16-shell/base16-atelierdune.light.sh
 end
 status --is-interactive; and . (rbenv init - | psub)
 start_agent
