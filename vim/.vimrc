@@ -24,6 +24,7 @@ syntax enable
 filetype plugin indent on
 set expandtab
 set softtabstop=2
+set tabstop=2
 set shiftwidth=2
 set smartindent
 set textwidth=89
