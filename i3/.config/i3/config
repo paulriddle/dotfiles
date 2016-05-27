@@ -1,4 +1,4 @@
-font pango:terminus 8
+font pango:dina 8
 # Mod1 is Alt. Mouse+Mod1 to drag floating windows.
 floating_modifier Mod1
 bindsym Mod1+Return exec i3-sensible-terminal
@@ -23,7 +23,7 @@ bindsym Mod4+Up move up
 bindsym Mod4+Right move right
 bindsym Mod1+z split h
 bindsym Mod1+v split v
-bindsym Mod4+f fullscreen toggle
+bindsym Mod4+f fullscreen
 bindsym Mod1+w layout tabbed
 bindsym Mod1+e layout toggle split
 bindsym Mod4+space floating toggle
@@ -52,7 +52,6 @@ bindsym Mod4+0 move container to workspace 10
 bindsym Mod4+c reload
 bindsym Mod4+r restart
 bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-new_window pixel
 new_float pixel
 hide_edge_borders both
 focus_follows_mouse no
@@ -70,6 +69,6 @@ mode "resize" {
 }
 bindsym Mod1+r mode "resize"
 bar {
-  status_command i3status
+  status_command i3status --config ~/.config/i3/i3status.conf
   tray_output primary
 }
