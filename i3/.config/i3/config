@@ -23,7 +23,7 @@ bindsym Mod4+Up move up
 bindsym Mod4+Right move right
 bindsym Mod1+z split h
 bindsym Mod1+v split v
-bindsym Mod1+f fullscreen toggle
+bindsym Mod4+f fullscreen toggle
 bindsym Mod1+w layout tabbed
 bindsym Mod1+e layout toggle split
 bindsym Mod4+space floating toggle
@@ -49,10 +49,13 @@ bindsym Mod4+7 move container to workspace 7
 bindsym Mod4+8 move container to workspace 8
 bindsym Mod4+9 move container to workspace 9
 bindsym Mod4+0 move container to workspace 10
-bindsym Mod1+b exec google-chrome-stable
 bindsym Mod4+c reload
 bindsym Mod4+r restart
 bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+new_window pixel
+new_float pixel
+hide_edge_borders both
+focus_follows_mouse no
 mode "resize" {
   bindsym h resize shrink width 10 px or 10 ppt
   bindsym j resize grow height 10 px or 10 ppt
