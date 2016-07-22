@@ -1,4 +1,4 @@
-font pango:dina 8
+font pango:Dina, FontAwesome 8
 # Mod1 is Alt. Mouse+Mod1 to drag floating windows.
 floating_modifier Mod1
 bindsym Mod1+Return exec i3-sensible-terminal
@@ -69,6 +69,7 @@ mode "resize" {
 }
 bindsym Mod1+r mode "resize"
 bar {
-  status_command i3status --config ~/.config/i3/i3status.conf
+  status_command i3status
   tray_output primary
+  font xft:Dina, FontAwesome 8
 }
