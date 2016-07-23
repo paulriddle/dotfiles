@@ -33,7 +33,7 @@ battery 1 {
   format = "%status %percentage"
   status_full = ""
   status_chr = ""
-  status_bat = ""
+  status_bat = ""
 }
 
 load {
