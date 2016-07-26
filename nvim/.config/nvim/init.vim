@@ -35,6 +35,8 @@ set hlsearch
 set wildmenu
 set lazyredraw
 set foldenable
+set ruler
+set rulerformat=%-14.(%c%V%)\ %P
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=syntax
