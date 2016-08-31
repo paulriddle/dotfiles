@@ -73,4 +73,4 @@ set relativenumber
 set cursorline
 let base16colorspace=256
 set background=dark
-colorscheme base16-monokai
+colorscheme base16-phd
