@@ -26,7 +26,7 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 set smartindent
-set textwidth=89
+set textwidth=88
 set showcmd
 set showmatch
 set langnoremap
