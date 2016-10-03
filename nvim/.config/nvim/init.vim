@@ -41,6 +41,7 @@ set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=syntax
 set shell=/bin/bash
+set autowrite
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 let g:jsx_ext_required = 0
@@ -68,9 +69,24 @@ nnoremap $ <nop>
 nnoremap gV `[v`]
 inoremap jk <esc>
 nnoremap <leader>s :mksession!<cr>
+nnoremap <leader>a :cclose<cr>
+nnoremap <C-j> :lnext<cr>
+nnoremap <C-k> :lprevious<cr>
+autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
+autocmd FileType go nmap <leader>t <Plug>(go-test)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
 set number
 set relativenumber
 set cursorline
 let base16colorspace=256
 set background=light
 colorscheme base16-solarized-light
+
+function! s:build_go_files()
+  let l:file = expand('%')
+  if l:file =~# '^\f\+_test\.go$'
+    call go#cmd#Test(0, 1)
+  elseif l:file =~# '^\f\+\.go$'
+    call go#cmd#Build(0)
+  endif
+endfunction
