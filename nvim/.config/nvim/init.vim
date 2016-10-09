@@ -70,8 +70,8 @@ nnoremap gV `[v`]
 inoremap jk <esc>
 nnoremap <leader>s :mksession!<cr>
 nnoremap <leader>a :cclose<cr>
-nnoremap <C-j> :lnext<cr>
-nnoremap <C-k> :lprevious<cr>
+nnoremap <C-n> :lnext<cr>
+nnoremap <C-b> :lprevious<cr>
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
