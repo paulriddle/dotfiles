@@ -79,8 +79,7 @@ set number
 set relativenumber
 set cursorline
 let base16colorspace=256
-set background=light
-colorscheme base16-solarized-light
+colorscheme base16-summerfruit-light
 
 function! s:build_go_files()
   let l:file = expand('%')
