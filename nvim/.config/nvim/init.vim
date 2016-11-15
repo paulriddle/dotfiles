@@ -18,6 +18,7 @@ Plug 'exu/pgsql.vim'
 Plug 'godlygeek/tabular'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
+Plug 'kballard/vim-fish'
 call plug#end()
 syntax enable
 filetype plugin indent on
