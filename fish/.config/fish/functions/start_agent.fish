@@ -19,7 +19,7 @@ function start_agent
     		echo "succeeded"
 		chmod 600 $SSH_ENV 
 		. $SSH_ENV > /dev/null
-    		ssh-add; ssh-add ~/.ssh/galkin-20150916
+    		ssh-add
 	end
 	end
 end
