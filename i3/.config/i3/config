@@ -1,10 +1,9 @@
-font pango:Dina, FontAwesome 8
 # Mod1 is Alt. Mouse+Mod1 to drag floating windows.
 floating_modifier Mod1
 bindsym Mod1+Return exec i3-sensible-terminal
 # Mod4 is Win. Kill focused window.
 bindsym Mod4+q kill
-bindsym Mod1+d exec dmenu_run
+bindsym Mod1+d exec dmenu_run -fn 'Dina-4'
 bindsym Mod1+h focus left
 bindsym Mod1+j focus down
 bindsym Mod1+k focus up
@@ -52,6 +51,7 @@ bindsym Mod4+0 move container to workspace 10
 bindsym Mod4+c reload
 bindsym Mod4+r restart
 bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+new_window none
 new_float pixel
 hide_edge_borders both
 focus_follows_mouse no
@@ -71,5 +71,5 @@ bindsym Mod1+r mode "resize"
 bar {
   status_command i3status
   tray_output primary
-  font xft:Dina, FontAwesome 8
+  font xft:Dina, FontAwesome 6
 }
