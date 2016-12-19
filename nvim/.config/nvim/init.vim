@@ -68,7 +68,6 @@ nnoremap ^ <nop>
 nnoremap $ <nop>
 " highlight last inserted text
 nnoremap gV `[v`]
-inoremap jk <esc>
 nnoremap <leader>s :mksession!<cr>
 nnoremap <leader>a :cclose<cr>
 nnoremap <C-n> :lnext<cr>
