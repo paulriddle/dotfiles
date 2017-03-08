@@ -1,13 +1,13 @@
 [user]
-	name = Pavel Galkin
-	email = paulriddle@openmailbox.org
+  name = Pavel Galkin
+  email = paulriddle@openmailbox.org
 [push]
-	default = simple
+  default = simple
 [core]
-	editor = nvim
-	excludesfile = ~/.gitignore
+  editor = nvim
+  excludesfile = ~/.gitignore
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   co = checkout
   st = status
   cv = commit --verbose
