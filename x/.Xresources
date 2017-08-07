@@ -1,4 +1,4 @@
-URxvt*scrollBar: false
+URxvt.scrollBar: false
 URxvt*font: xft:Dina:size=7
 
 #define base00 #231f20

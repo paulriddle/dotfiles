@@ -27,7 +27,7 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 set smartindent
-set textwidth=76
+set textwidth=114
 set showcmd
 set showmatch
 set langnoremap
@@ -79,7 +79,7 @@ set number
 set relativenumber
 set cursorline
 let base16colorspace=256
-colorscheme base16-gruvbox-light-medium
+colorscheme base16-google-light
 
 function! s:build_go_files()
   let l:file = expand('%')
