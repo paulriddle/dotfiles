@@ -6,3 +6,9 @@
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
+[alias]
+  b = branch
+  c = commit --verbose
+  co = checkout
+  p = pull
+  ps = push
