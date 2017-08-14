@@ -10,5 +10,5 @@
   b = branch
   c = commit --verbose
   co = checkout
-  p = pull
-  ps = push
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  st = status --short
