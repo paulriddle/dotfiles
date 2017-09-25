@@ -20,14 +20,14 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
 Plug 'kballard/vim-fish'
 call plug#end()
-syntax enable
+syntax on
 filetype plugin indent on
 set expandtab
 set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 set smartindent
-set textwidth=76
+set textwidth=109
 set showcmd
 set showmatch
 set langnoremap
@@ -75,11 +75,11 @@ nnoremap <C-b> :lprevious<cr>
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
+set cursorline
 set number
 set relativenumber
-set cursorline
 let base16colorspace=256
-colorscheme base16-3024
+colorscheme base16-github
 
 function! s:build_go_files()
   let l:file = expand('%')

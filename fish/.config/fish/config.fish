@@ -1,6 +1,5 @@
 if status --is-interactive
-  eval sh $HOME/.config/base16-shell/scripts/base16-3024.sh
+  eval sh $HOME/.config/base16-shell/scripts/base16-github.sh
 end
 start_agent
-
 set -x GOPATH ~/gocode
