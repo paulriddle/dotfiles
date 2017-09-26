@@ -10,7 +10,7 @@ workspace 7 output VGA-1
 workspace 8 output VGA-1
 workspace 9 output VGA-1
 workspace 10 output VGA-1
-bindsym Mod1+Return exec i3-sensible-terminal
+bindsym Mod1+Return exec urxvt
 # Mod4 is Win. Kill focused window.
 bindsym Mod4+q kill
 bindsym Mod1+d exec dmenu_run -fn 'Dina-4'

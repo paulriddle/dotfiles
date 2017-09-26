@@ -79,7 +79,7 @@ set number
 set relativenumber
 set cursorline
 let base16colorspace=256
-colorscheme base16-circus
+colorscheme base16-github
 
 function! s:build_go_files()
   let l:file = expand('%')
