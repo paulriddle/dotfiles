@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-Plug 'chriskempson/base16-vim'
+Plug 'robertmeta/nofrils'
 Plug 'othree/html5.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jez/vim-superman'
@@ -7,18 +7,19 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-ruby/vim-ruby'
 Plug 'thoughtbot/vim-rspec'
-Plug 'tpope/vim-commentary'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'mhinz/vim-grepper'
-Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
 Plug 'exu/pgsql.vim'
 Plug 'godlygeek/tabular'
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-rails'
 Plug 'kballard/vim-fish'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
 call plug#end()
 syntax on
 filetype plugin indent on
@@ -78,8 +79,7 @@ autocmd FileType go nmap <leader>r <Plug>(go-run)
 set cursorline
 set number
 set relativenumber
-let base16colorspace=256
-colorscheme base16-material-palenight
+colorscheme nofrils-dark
 
 function! s:build_go_files()
   let l:file = expand('%')
