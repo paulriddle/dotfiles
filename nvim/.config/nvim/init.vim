@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-Plug 'robertmeta/nofrils'
+Plug 'chriskempson/base16-vim'
 Plug 'othree/html5.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jez/vim-superman'
@@ -79,7 +79,8 @@ autocmd FileType go nmap <leader>r <Plug>(go-run)
 set cursorline
 set number
 set relativenumber
-colorscheme nofrils-dark
+let base16colorspace=256
+colorscheme base16-atelier-dune-light
 
 function! s:build_go_files()
   let l:file = expand('%')
