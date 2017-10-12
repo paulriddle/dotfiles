@@ -1,2 +1,2 @@
-URxvt*scrollBar: false
-URxvt*font: xft:Hasklig Light:size=8
+URxvt.scrollBar: false
+URxvt*font: xft:Hasklig:size=7
