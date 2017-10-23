@@ -80,7 +80,7 @@ set cursorline
 set number
 set relativenumber
 let base16colorspace=256
-colorscheme base16-atelier-dune-light
+colorscheme custom-light
 
 function! s:build_go_files()
   let l:file = expand('%')
