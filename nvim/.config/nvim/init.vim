@@ -48,10 +48,13 @@ let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 let g:jsx_ext_required = 0
 let g:sql_type_default = 'pgsql'
+" ---------------------------
+" Move between split windows.
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+" ---------------------------
 nnoremap <leader>f :CtrlP<cr>
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
