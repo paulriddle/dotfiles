@@ -23,10 +23,13 @@ Plug 'tpope/vim-unimpaired'
 call plug#end()
 syntax on
 filetype plugin indent on
+" ------------------------
+" Tab settings
 set expandtab
-set softtabstop=2
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
+" ------------------------
 set smartindent
 set textwidth=88
 set showcmd
@@ -54,6 +57,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+" ---------------------------
+" Toggle invisible characters
+nmap <leader>l :set list!<cr>
+set listchars=tab:▸\ ,trail:-,nbsp:+
 " ---------------------------
 nnoremap <leader>f :CtrlP<cr>
 let g:ctrlp_match_window = 'bottom,order:ttb'
