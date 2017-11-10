@@ -26,9 +26,12 @@ filetype plugin indent on
 " ------------------------
 " Tab settings
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=2 "     ts
+set softtabstop=2 " sts
+set shiftwidth=2 "  sw
+autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
+autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 " ------------------------
 set smartindent
 set textwidth=88
