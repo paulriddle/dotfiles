@@ -15,6 +15,7 @@ Plug 'exu/pgsql.vim'
 Plug 'godlygeek/tabular'
 Plug 'easymotion/vim-easymotion'
 Plug 'kballard/vim-fish'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
@@ -49,22 +50,25 @@ set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=syntax
 set shell=/bin/bash
-set autowrite
+set autowrite " so that I don't have to call :w before GoBuild, make, etc.
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 let g:jsx_ext_required = 0
 let g:sql_type_default = 'pgsql'
-" ---------------------------
+"-------------------------------------------------------------------------
+" Moving around
+"-------------------------------------------------------------------------
+" replace ^ and $ with B and E
+nnoremap B ^
+nnoremap E $
+nnoremap ^ <nop>
+nnoremap $ <nop>
 " Move between split windows.
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-" ---------------------------
-" Toggle invisible characters
-nmap <leader>l :set list!<cr>
-set listchars=tab:▸\ ,trail:-,nbsp:+
-" ---------------------------
+"--------------------------------------------
 nnoremap <leader>f :CtrlP<cr>
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
@@ -76,25 +80,27 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <space> za
 nnoremap j gj
 nnoremap k gk
-nnoremap B ^
-nnoremap E $
-nnoremap ^ <nop>
-nnoremap $ <nop>
-" highlight last inserted text
-nnoremap gV `[v`]
+"-------------------------------------------------------------------------
 nnoremap <leader>s :mksession!<cr>
-nnoremap <leader>a :cclose<cr>
-nnoremap <C-n> :lnext<cr>
-nnoremap <C-b> :lprevious<cr>
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
-set cursorline
-set number
+"-------------------------------------------------------------------------
+" Visual settings
+"-------------------------------------------------------------------------
+set cursorline " highlight current line
+set number " without it `relativenumber` shows 0 as current line number
 set relativenumber
-let base16colorspace=256
+let base16colorspace=256 " required by the current colorscheme
 colorscheme custom-light
-
+"-------------------------------------------------------------------------
+" Toggle invisible characters
+nmap <leader>l :set list!<cr>
+set listchars=tab:▸\ ,trail:-,nbsp:+
+"-------------------------------------------------------------------------
+" highlight last inserted text
+nnoremap gV `[v`]
+"-------------------------------------------------------------------------
 function! s:build_go_files()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
