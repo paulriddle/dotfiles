@@ -82,9 +82,22 @@ nnoremap j gj
 nnoremap k gk
 "-------------------------------------------------------------------------
 nnoremap <leader>s :mksession!<cr>
+"-------------------------------------------------------------------------
+" Golang
+"-------------------------------------------------------------------------
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
+
+" run :GoBuild or :GoTestCompile based on the go file
+function! s:build_go_files()
+  let l:file = expand('%')
+  if l:file =~# '^\f\+_test\.go$'
+    call go#cmd#Test(0, 1)
+  elseif l:file =~# '^\f\+\.go$'
+    call go#cmd#Build(0)
+  endif
+endfunction
 "-------------------------------------------------------------------------
 " Visual settings
 "-------------------------------------------------------------------------
@@ -100,12 +113,3 @@ set listchars=tab:▸\ ,trail:-,nbsp:+
 "-------------------------------------------------------------------------
 " highlight last inserted text
 nnoremap gV `[v`]
-"-------------------------------------------------------------------------
-function! s:build_go_files()
-  let l:file = expand('%')
-  if l:file =~# '^\f\+_test\.go$'
-    call go#cmd#Test(0, 1)
-  elseif l:file =~# '^\f\+\.go$'
-    call go#cmd#Build(0)
-  endif
-endfunction
