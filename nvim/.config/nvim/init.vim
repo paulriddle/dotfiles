@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'othree/html5.vim'
 Plug 'ctrlpvim/ctrlp.vim'
