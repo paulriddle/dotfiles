@@ -110,7 +110,7 @@ set cursorline " highlight current line
 set number " without it `relativenumber` shows 0 as current line number
 set relativenumber
 let base16colorspace=256 " required by the current colorscheme
-colorscheme custom-light
+colorscheme base16-gruvbox-dark-pale
 
 " Toggle invisible characters
 nmap <leader>l :set list!<cr>
