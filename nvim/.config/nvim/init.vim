@@ -61,7 +61,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 nnoremap <leader><space> :nohlsearch<cr>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>v :source $MYVIMRC<cr>
 nnoremap <space> za
 nnoremap j gj
 nnoremap k gk
