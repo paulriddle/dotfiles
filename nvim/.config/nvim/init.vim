@@ -7,6 +7,7 @@ Plug 'jez/vim-superman'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-ruby/vim-ruby'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'mhinz/vim-grepper'
