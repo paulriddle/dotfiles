@@ -3,6 +3,8 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'othree/html5.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'jez/vim-superman'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
