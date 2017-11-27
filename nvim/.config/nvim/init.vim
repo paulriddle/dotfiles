@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'othree/html5.vim'
+Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -113,8 +114,7 @@ set cursorline " highlight current line
 set number " without it `relativenumber` shows 0 as current line number
 set relativenumber
 let base16colorspace=256 " required by the current colorscheme
-let g:seoul256_background = 256
-colorscheme seoul256-light
+colorscheme custom-light
 
 " Toggle invisible characters
 nmap <leader>l :set list!<cr>
