@@ -20,6 +20,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
 Plug 'kballard/vim-fish'
 Plug 'tpope/vim-unimpaired'
+Plug 'junegunn/gv.vim'
 call plug#end()
 syntax enable
 filetype plugin indent on
