@@ -1,27 +1,37 @@
+" Install vim-plug if it doesn't exist yet
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
-Plug 'othree/html5.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'exu/pgsql.vim'
+Plug 'fatih/vim-go'
+Plug 'godlygeek/tabular'
 Plug 'jez/vim-superman'
-Plug 'pangloss/vim-javascript'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/gv.vim'
+Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
+Plug 'kballard/vim-fish'
+Plug 'mhinz/vim-grepper'
 Plug 'mxw/vim-jsx'
-Plug 'vim-ruby/vim-ruby'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-commentary'
-Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-Plug 'mhinz/vim-grepper'
-Plug 'tpope/vim-surround'
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'fatih/vim-go'
-Plug 'exu/pgsql.vim'
-Plug 'godlygeek/tabular'
-Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
-Plug 'kballard/vim-fish'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'junegunn/gv.vim'
+Plug 'vim-ruby/vim-ruby'
 call plug#end()
+
 syntax enable
 filetype plugin indent on
 set expandtab
@@ -45,6 +55,12 @@ set foldnestmax=10
 set foldmethod=syntax
 set shell=/bin/bash
 set autowrite
+
+" Line numbers and current line settings
+set number
+set relativenumber
+set cursorline
+
 let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 let g:jsx_ext_required = 0
@@ -77,9 +93,6 @@ nnoremap <C-b> :lprevious<cr>
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
-set number
-set relativenumber
-set cursorline
 let base16colorspace=256
 colorscheme custom-light
 
