@@ -1,38 +1,43 @@
+" Install vim-plug if it doesn't exist yet
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'othree/html5.vim'
+Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'exu/pgsql.vim'
+Plug 'fatih/vim-go'
+Plug 'godlygeek/tabular'
+Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/seoul256.vim'
-Plug 'jez/vim-superman'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'vim-ruby/vim-ruby'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
-Plug 'thoughtbot/vim-rspec'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-Plug 'mhinz/vim-grepper'
-Plug 'airblade/vim-gitgutter'
-Plug 'fatih/vim-go'
-Plug 'exu/pgsql.vim'
-Plug 'godlygeek/tabular'
-Plug 'easymotion/vim-easymotion'
 Plug 'kballard/vim-fish'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
+Plug 'mhinz/vim-grepper'
+Plug 'mxw/vim-jsx'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 call plug#end()
+
 syntax on
 filetype plugin indent on
-" ------------------------
-"=========================================================================
+
 " Tab settings
-"=========================================================================
 set expandtab
 set tabstop=2 "     ts
 set softtabstop=2 " sts
@@ -40,11 +45,13 @@ set shiftwidth=2 "  sw
 autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
-"-------------------------------------------------------------------------
-set smartindent
+
 set textwidth=88
+autocmd FileType ruby setlocal textwidth=120
+
+set smartindent
 set showcmd
-set showmatch
+set showmatch " Jump to the matching bracket for 0.5 second when inserting new one
 set langnoremap
 set incsearch
 set hlsearch
@@ -62,9 +69,7 @@ let mapleader=","
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
 let g:jsx_ext_required = 0
 let g:sql_type_default = 'pgsql'
-"=========================================================================
-" Moving around
-"=========================================================================
+
 " replace ^ and $ with B and E
 nnoremap B ^
 nnoremap E $
