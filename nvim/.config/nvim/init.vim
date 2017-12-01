@@ -47,17 +47,8 @@ set textwidth=88
 autocmd FileType ruby setlocal textwidth=120
 
 set smartindent
-set showcmd
 set showmatch " Jump to the matching bracket for 0.5 second when inserting new one
-set langnoremap
-
-set incsearch
-set hlsearch
-
-set wildmenu
 set lazyredraw
-
-set ruler
 set rulerformat=%-14.(%c%V%)\ %P
 
 set foldenable
