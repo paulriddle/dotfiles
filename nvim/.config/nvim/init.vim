@@ -53,28 +53,34 @@ set smartindent
 set showcmd
 set showmatch " Jump to the matching bracket for 0.5 second when inserting new one
 set langnoremap
+
 set incsearch
 set hlsearch
+
 set wildmenu
 set lazyredraw
-set foldenable
+
 set ruler
 set rulerformat=%-14.(%c%V%)\ %P
+
+set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=syntax
-set shell=/bin/bash
-set autowrite " so that I don't have to call :w before GoBuild, make, etc.
-let mapleader=","
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
-let g:jsx_ext_required = 0
-let g:sql_type_default = 'pgsql'
 
-" replace ^ and $ with B and E
+set listchars=tab:▸\ ,trail:-,nbsp:+
+set shell=/usr/bin/fish
+set autowrite " so that I don't have to call :w before GoBuild, make, etc.
+
+" Leader is , reverse character search is \
+let mapleader=","
+nnoremap \ ,
+
+" Swap ^ and $ with B and E
 nnoremap B ^
 nnoremap E $
-nnoremap ^ <nop>
-nnoremap $ <nop>
+nnoremap ^ B
+nnoremap $ E
 
 " Move between split windows.
 nnoremap <c-j> <c-w>j
@@ -82,21 +88,40 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-nnoremap <leader>f :CtrlP<cr>
+" Exit terminal mode with esc
+tnoremap <esc> <c-\><c-n>
+
+set cursorline " highlight current line
+set number " without it `relativenumber` shows 0 as current line number
+set relativenumber
+
+let base16colorspace=256 " required by the current colorscheme
+colorscheme custom-light
+
+" Toggle invisible characters
+nmap <leader>l :set list!<cr>
+" Clear search highlighting
+nnoremap <leader><space> :nohlsearch<cr>
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>v :source $MYVIMRC<cr>
+nnoremap <space> za
+
+" Make j and k not ignore wrapped parts of lines
+nnoremap j gj
+nnoremap k gk
+
+" CtrlP
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-nnoremap <leader><space> :nohlsearch<cr>
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <space> za
-nnoremap j gj
-nnoremap k gk
-nnoremap <leader>s :mksession!<cr>
-"=========================================================================
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
+nnoremap <leader>f :CtrlP<cr>
+autocmd FileType ruby nnoremap <leader>a :CtrlP app<cr>
+autocmd FileType ruby nnoremap <leader>s :CtrlP spec<cr>
+
 " Golang
-"=========================================================================
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>i <Plug>(go-imports)
 autocmd FileType go nmap <leader>t <Plug>(go-test)
@@ -112,18 +137,6 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
-"=========================================================================
-" Visual settings
-"=========================================================================
-set cursorline " highlight current line
-set number " without it `relativenumber` shows 0 as current line number
-set relativenumber
-let base16colorspace=256 " required by the current colorscheme
-colorscheme custom-light
 
-" Toggle invisible characters
-nmap <leader>l :set list!<cr>
-set listchars=tab:▸\ ,trail:-,nbsp:+
-
-" highlight last inserted text
-nnoremap gV `[v`]
+let g:jsx_ext_required = 0
+let g:sql_type_default = 'pgsql'
