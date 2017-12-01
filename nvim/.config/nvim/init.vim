@@ -34,9 +34,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 call plug#end()
 
-syntax on
-filetype plugin indent on
-
 " Tab settings
 set expandtab
 set tabstop=2 "     ts
@@ -96,7 +93,7 @@ set number " without it `relativenumber` shows 0 as current line number
 set relativenumber
 
 let base16colorspace=256 " required by the current colorscheme
-colorscheme custom-light
+colorscheme base16-onedark
 
 " Toggle invisible characters
 nmap <leader>l :set list!<cr>
