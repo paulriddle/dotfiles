@@ -85,7 +85,7 @@ set relativenumber
 
 let base16colorspace=256 " required by the current colorscheme
 " colorscheme base16-one-light
-colorscheme base16-onedark
+colorscheme base16-apathy
 
 " Toggle invisible characters
 nmap <leader>l :set list!<cr>
