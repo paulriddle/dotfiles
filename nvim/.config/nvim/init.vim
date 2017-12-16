@@ -9,7 +9,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'exu/pgsql.vim'
 Plug 'fatih/vim-go'
@@ -97,15 +96,10 @@ nnoremap <space> za
 nnoremap j gj
 nnoremap k gk
 
-" CtrlP
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|tmp|build|report)$'
-nnoremap <leader>f :CtrlP<cr>
-autocmd FileType ruby nnoremap <leader>a :CtrlP app<cr>
-autocmd FileType ruby nnoremap <leader>s :CtrlP spec<cr>
+" fzf
+nnoremap <leader>f :FZF<cr>
+autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
+autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
 
 " Golang
 autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
