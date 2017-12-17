@@ -84,7 +84,7 @@ let base16colorspace=256 " required by the current colorscheme
 colorscheme base16-apathy
 
 " Toggle invisible characters
-nmap <leader>l :set list!<cr>
+nnoremap <leader>l :set list!<cr>
 " Clear search highlighting
 nnoremap <leader><space> :nohlsearch<cr>
 
