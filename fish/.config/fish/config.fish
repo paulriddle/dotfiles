@@ -1,6 +1,9 @@
 if status --is-interactive
-  # eval sh $HOME/.config/base16-shell/scripts/base16-one-light.sh
-  eval sh $HOME/.config/base16-shell/scripts/base16-apathy.sh
+  if [ "$LIGHT_COLORSCHEME" -eq 1 ]
+    eval sh $HOME/.config/base16-shell/scripts/base16-gruvbox-light-medium.sh
+  else
+    eval sh $HOME/.config/base16-shell/scripts/base16-irrblack.sh
+  end
 end
 
 start_agent

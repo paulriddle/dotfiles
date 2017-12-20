@@ -1,3 +1,4 @@
 function toggle_light_colorscheme
-  set -U LIGHT_COLORSCHEME 1
+  [ "$LIGHT_COLORSCHEME" -eq 1 ]; set -U LIGHT_COLORSCHEME $status;
+  echo $LIGHT_COLORSCHEME
 end

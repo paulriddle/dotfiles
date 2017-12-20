@@ -80,8 +80,7 @@ set number " without it `relativenumber` shows 0 as current line number
 set relativenumber
 
 let base16colorspace=256 " required by the current colorscheme
-" colorscheme base16-one-light
-colorscheme base16-apathy
+colorscheme base16-gruvbox-light-medium
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
