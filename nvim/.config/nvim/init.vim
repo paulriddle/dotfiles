@@ -102,11 +102,11 @@ autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
 autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
 
 " Golang
-autocmd FileType go nmap <leader>bl :<C-u>call <sid>build_go_files()<cr>
-autocmd FileType go nmap <leader>i <Plug>(go-imports)
-autocmd FileType go nmap <leader>t <Plug>(go-test)
-autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
-autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nnoremap <leader>bl :<C-u>call <sid>build_go_files()<cr>
+autocmd FileType go nnoremap <leader>i <Plug>(go-imports)
+autocmd FileType go nnoremap <leader>t <Plug>(go-test)
+autocmd FileType go nnoremap <leader>c <Plug>(go-coverage-toggle)
+autocmd FileType go nnoremap <leader>r <Plug>(go-run)
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
