@@ -96,8 +96,7 @@ autocmd FileType go nmap <leader>b :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 let base16colorspace=256
-colorscheme base16-one-light
-" colorscheme base16-gruvbox-dark-hard
+colorscheme base16-gruvbox-light-medium
 
 function! s:build_go_files()
   let l:file = expand('%')
