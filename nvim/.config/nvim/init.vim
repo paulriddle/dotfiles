@@ -88,7 +88,6 @@ nnoremap <leader>l :set list!<cr>
 nnoremap <leader><space> :nohlsearch<cr>
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>v :source $MYVIMRC<cr>
 nnoremap <space> za
 
 " Make j and k not ignore wrapped parts of lines
@@ -102,9 +101,10 @@ autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
 autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
 
 " Golang
+autocmd FileType go nnoremap <leader>t :GoTestFunc<cr>
 autocmd FileType go nnoremap <leader>bt :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>i <Plug>(go-imports)
-autocmd FileType go nmap <leader>t <Plug>(go-test)
+autocmd FileType go nmap <leader>T <Plug>(go-test)
 autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 
@@ -112,7 +112,7 @@ autocmd FileType go nmap <leader>r <Plug>(go-run)
 function! s:build_go_files()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
-    call go#cmd#Test(0, 1)
+    call go#test#Test(0, 1)
   elseif l:file =~# '^\f\+\.go$'
     call go#cmd#Build(0)
   endif
