@@ -31,9 +31,9 @@ wireless _first_ {
 
 battery 1 {
   format = "%status %percentage"
-  status_full = ""
-  status_chr = ""
-  status_bat = ""
+  status_full = "full"
+  status_chr = "chr"
+  status_bat = "bat"
 }
 
 load {
