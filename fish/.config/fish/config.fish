@@ -4,7 +4,7 @@ if status --is-interactive
   if [ "$LIGHT_COLORSCHEME" -eq 1 ]
     eval sh $HOME/.config/base16-shell/scripts/base16-gruvbox-light-medium.sh
   else
-    eval sh $HOME/.config/base16-shell/scripts/base16-gruvbox-dark-medium.sh
+    eval sh $HOME/.config/base16-shell/scripts/base16-mellow-purple.sh
   end
 end
 
