@@ -76,9 +76,15 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+tnoremap <c-j> <c-\><c-n><c-w>j
+tnoremap <c-k> <c-\><c-n><c-w>k
+tnoremap <c-h> <c-\><c-n><c-w>h
+tnoremap <c-l> <c-\><c-n><c-w>l
 
 " Exit terminal mode with esc
 tnoremap <esc> <c-\><c-n>
+" Don't forget about esc though, map it to alt-[
+tnoremap <a-[> <esc>
 
 set cursorline " highlight current line
 set number " without it `relativenumber` shows 0 as current line number
