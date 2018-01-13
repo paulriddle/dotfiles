@@ -113,6 +113,8 @@ autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
 autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
 
 " Golang
+let g:go_highlight_build_constraints = 1
+
 autocmd FileType go nnoremap <leader>t :GoTestFunc<cr>
 autocmd FileType go nnoremap <leader>bt :<C-u>call <sid>build_go_files()<cr>
 autocmd FileType go nmap <leader>i <Plug>(go-imports)
