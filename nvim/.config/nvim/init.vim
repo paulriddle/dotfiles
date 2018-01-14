@@ -46,10 +46,8 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType c setlocal ts=8 sts=8 sw=8 noexpandtab
 
-set textwidth=88
+set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
-autocmd FileType go setlocal textwidth=80
-autocmd FileType c setlocal textwidth=80
 
 set smartindent
 set showmatch " Jump to the matching bracket for 0.5 second when inserting new one
