@@ -10,7 +10,6 @@ end
 
 start_agent
 
-set -x GOPATH ~/gocode
 set -x FISH_CONFIG ~/.config/fish/config.fish
 set -x I3 ~/.config/i3/config
 set -x FZF_DEFAULT_COMMAND 'rg --files --ignore-case'
