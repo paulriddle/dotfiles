@@ -1,0 +1,13 @@
+.config/fish/functions
+!.config/fish/functions/fish_prompt.fish
+!.config/fish/functions/fish_title.fish
+!.config/fish/functions/fish_user_key_bindings.fish
+!.config/fish/functions/fzf_key_bindings.fish
+!.config/fish/functions/l.fish
+!.config/fish/functions/ls.fish
+!.config/fish/functions/start_agent.fish
+!.config/fish/functions/test_identities.fish
+!.config/fish/functions/toggle_light_colorscheme.fish
+!.config/fish/functions/vi.fish
+!.config/fish/functions/vim.fish
+!.config/fish/functions/vman.fish
