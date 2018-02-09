@@ -1,1 +1,0 @@
-/home/paulriddle/.config/fisherman/bass/functions/bass.fish
