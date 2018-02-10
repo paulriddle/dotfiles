@@ -67,6 +67,7 @@ set autowrite " so that I don't have to call :w before GoBuild, make, etc.
 " Leader is , reverse character search is \
 let mapleader=","
 nnoremap \ ,
+let maplocalleader="_"
 
 " Swap ^ and $ with B and E
 nnoremap B ^
