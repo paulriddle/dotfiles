@@ -118,6 +118,11 @@ nnoremap <leader>bf :Buffers<cr>
 autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
 autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
 
+" YouCompleteMe
+let g:ycm_filetype_blacklist = {
+      \ 'fzf' : 1,
+      \}
+
 " Golang
 let g:go_highlight_build_constraints = 1
 
