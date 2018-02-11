@@ -109,6 +109,9 @@ nnoremap <space> za
 nnoremap j gj
 nnoremap k gk
 
+" Ergonomic escape
+inoremap jk <esc>
+
 " fzf
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>bf :Buffers<cr>
