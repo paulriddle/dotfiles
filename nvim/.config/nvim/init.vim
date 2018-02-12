@@ -51,7 +51,8 @@ set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
 
 set smartindent
-set showmatch " Jump to the matching bracket for 0.5 second when inserting new one
+" Jump to the matching bracket for 0.5 second when inserting new one
+set showmatch
 set lazyredraw
 set rulerformat=%-14.(%c%V%)\ %P
 
@@ -62,7 +63,8 @@ set foldmethod=syntax
 
 set listchars=tab:▸\ ,trail:-,nbsp:+
 set shell=/usr/bin/fish
-set autowrite " so that I don't have to call :w before GoBuild, make, etc.
+" So that I don't have to call :w before GoBuild, make, etc.
+set autowrite
 
 " Leader is , reverse character search is \
 let mapleader=","
@@ -90,11 +92,14 @@ tnoremap <esc> <c-\><c-n>
 " Don't forget about esc though, map it to alt-[
 tnoremap <a-[> <esc>
 
-set cursorline " highlight current line
-set number " without it `relativenumber` shows 0 as current line number
+" Highlight current line
+set cursorline
+" Without it `relativenumber` shows 0 as current line number
+set number
 set relativenumber
 
-let base16colorspace=256 " required by the current colorscheme
+" Required by the current colorscheme
+let base16colorspace=256
 colorscheme base16-gruvbox-light-medium
 
 " Toggle invisible characters
