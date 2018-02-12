@@ -120,8 +120,12 @@ inoremap jk <esc>
 " fzf
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>bf :Buffers<cr>
-autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
-autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
+
+augroup ruby_mappings
+  autocmd!
+  autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
+  autocmd FileType ruby nnoremap <buffer> <leader>s :FZF spec<cr>
+augroup END
 
 " YouCompleteMe
 let g:ycm_filetype_blacklist = {
@@ -131,12 +135,15 @@ let g:ycm_filetype_blacklist = {
 " Golang
 let g:go_highlight_build_constraints = 1
 
-autocmd FileType go nnoremap <leader>t :GoTestFunc<cr>
-autocmd FileType go nnoremap <leader>bt :<C-u>call <sid>build_go_files()<cr>
-autocmd FileType go nmap <leader>i <Plug>(go-imports)
-autocmd FileType go nmap <leader>T <Plug>(go-test)
-autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
-autocmd FileType go nmap <leader>r <Plug>(go-run)
+augroup go_mappings
+  autocmd!
+  autocmd FileType go nnoremap <buffer> <leader>t :GoTestFunc<cr>
+  autocmd FileType go nnoremap <buffer> <leader>bt :<C-u>call <sid>build_go_files()<cr>
+  autocmd FileType go nmap <buffer> <leader>i <Plug>(go-imports)
+  autocmd FileType go nmap <buffer> <leader>T <Plug>(go-test)
+  autocmd FileType go nmap <buffer> <leader>c <Plug>(go-coverage-toggle)
+  autocmd FileType go nmap <buffer> <leader>r <Plug>(go-run)
+augroup END
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
