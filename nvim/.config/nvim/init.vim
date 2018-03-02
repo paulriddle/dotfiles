@@ -132,6 +132,14 @@ let g:ycm_filetype_blacklist = {
       \ 'fzf' : 1,
       \}
 
+" vimtex
+"
+" neovim doesn't support --remote and compiled withut clientserver anyway, nvr
+" is a tool written in python that serves as a workaround.
+let g:vimtex_compiler_progname = 'nvr'
+" Sometimes tex files detected as plaintext, this option prevents it
+let g:tex_flavor = 'latex'
+
 " Golang
 let g:go_highlight_build_constraints = 1
 
