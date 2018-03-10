@@ -24,6 +24,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
+Plug 'lervag/wiki'
 Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
@@ -34,7 +35,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 call plug#end()
 
 " Tab settings
