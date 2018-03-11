@@ -100,7 +100,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-colorscheme base16-gruvbox-light-medium
+colorscheme modified-github-light
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
