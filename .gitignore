@@ -4,3 +4,5 @@ xflux
 .netrwhist
 fish_history
 fishd*
+pgcli/.config/pgcli/log
+pgcli/.config/pgcli/history
