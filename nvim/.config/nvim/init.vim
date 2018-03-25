@@ -71,6 +71,9 @@ let mapleader=","
 nnoremap \ ,
 let maplocalleader="_"
 
+" Do not highlight matching parens, it's annoying and showmatch is sufficient
+let loaded_matchparen = 1
+
 " Swap ^ and $ with B and E
 nnoremap B ^
 nnoremap E $
