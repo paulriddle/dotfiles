@@ -119,6 +119,7 @@ nnoremap k gk
 
 " Ergonomic escape
 inoremap jk <esc>
+inoremap <esc> <nop>
 
 " fzf
 nnoremap <leader>f :FZF<cr>
