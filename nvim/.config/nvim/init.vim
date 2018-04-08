@@ -38,19 +38,20 @@ call plug#end()
 
 " Tab settings
 set expandtab
-set tabstop=2     " ts
+set tabstop=2 "     ts
 set softtabstop=2 " sts
-set shiftwidth=2  " sw
+set shiftwidth=2 "  sw
 autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+autocmd FileType c setlocal ts=4 sts=4 sw=4 noexpandtab
 
-set textwidth=88
+set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
-autocmd FileType go setlocal textwidth=80
 
 set smartindent
-set showmatch " Jump to the matching bracket for 0.5 second when inserting new one
+" Jump to the matching bracket for 0.5 second when inserting new one
+set showmatch
 set lazyredraw
 set rulerformat=%-14.(%c%V%)\ %P
 
@@ -61,11 +62,16 @@ set foldmethod=syntax
 
 set listchars=tab:▸\ ,trail:-,nbsp:+
 set shell=/usr/bin/fish
-set autowrite " so that I don't have to call :w before GoBuild, make, etc.
+" So that I don't have to call :w before GoBuild, make, etc.
+set autowrite
 
-
+" Leader is , reverse character search is \
 let mapleader=","
 nnoremap \ ,
+let maplocalleader="_"
+
+" Do not highlight matching parens, it's annoying and showmatch is sufficient
+let loaded_matchparen = 1
 
 " Swap ^ and $ with B and E
 nnoremap B ^
@@ -88,12 +94,15 @@ tnoremap <esc> <c-\><c-n>
 " Don't forget about esc though, map it to alt-[
 tnoremap <a-[> <esc>
 
-set cursorline " highlight current line
-set number " without it `relativenumber` shows 0 as current line number
+" Highlight current line
+set cursorline
+" Without it `relativenumber` shows 0 as current line number
+set number
 set relativenumber
 
-let base16colorspace=256 " required by the current colorscheme
-colorscheme base16-railscasts
+" Required by the current colorscheme
+let base16colorspace=256
+colorscheme modified-github-light
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -107,19 +116,31 @@ nnoremap <space> za
 nnoremap j gj
 nnoremap k gk
 
+" Ergonomic escape
+inoremap jk <esc>
+
 " fzf
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>bf :Buffers<cr>
-autocmd FileType ruby nnoremap <leader>a :FZF app<cr>
-autocmd FileType ruby nnoremap <leader>s :FZF spec<cr>
+
+augroup ruby_mappings
+  autocmd!
+  autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
+  autocmd FileType ruby nnoremap <buffer> <leader>s :FZF spec<cr>
+augroup END
 
 " Golang
-autocmd FileType go nnoremap <leader>t :GoTestFunc<cr>
-autocmd FileType go nnoremap <leader>bt :<C-u>call <sid>build_go_files()<cr>
-autocmd FileType go nmap <leader>i <Plug>(go-imports)
-autocmd FileType go nmap <leader>T <Plug>(go-test)
-autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
-autocmd FileType go nmap <leader>r <Plug>(go-run)
+let g:go_highlight_build_constraints = 1
+
+augroup go_mappings
+  autocmd!
+  autocmd FileType go nnoremap <buffer> <leader>t :GoTestFunc<cr>
+  autocmd FileType go nnoremap <buffer> <leader>bt :<C-u>call <sid>build_go_files()<cr>
+  autocmd FileType go nmap <buffer> <leader>i <Plug>(go-imports)
+  autocmd FileType go nmap <buffer> <leader>T <Plug>(go-test)
+  autocmd FileType go nmap <buffer> <leader>c <Plug>(go-coverage-toggle)
+  autocmd FileType go nmap <buffer> <leader>r <Plug>(go-run)
+augroup END
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
