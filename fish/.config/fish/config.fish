@@ -4,7 +4,7 @@ if status --is-interactive
   if [ "$LIGHT_COLORSCHEME" -eq 1 ]
     eval sh $HOME/.config/base16-shell/scripts/base16-github.sh
   else
-    eval sh $HOME/.config/base16-shell/scripts/base16-brushtrees-dark.sh
+    eval sh $HOME/.config/base16-shell/scripts/base16-classic-dark.sh
   end
 end
 
