@@ -6,9 +6,26 @@
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
+  pager = /usr/share/git/diff-highlight/diff-highlight | less
+[color]
+  ui = always
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "diff"]
+  commit = green
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+  whitespace = red reverse
 [alias]
   b = branch
   c = commit --verbose
   co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   st = status --short
+[interactive]
+	diffFilter = diff-highlight
