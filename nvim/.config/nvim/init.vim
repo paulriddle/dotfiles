@@ -18,6 +18,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'exu/pgsql.vim'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
+Plug 'jez/vim-better-sml'
 Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
