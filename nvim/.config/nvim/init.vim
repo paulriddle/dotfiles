@@ -6,6 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plug 'robertmeta/nofrils'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe'
@@ -104,7 +105,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-colorscheme modified-github-light
+colorscheme nofrils-dark
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
