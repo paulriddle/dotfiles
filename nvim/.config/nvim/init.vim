@@ -148,6 +148,7 @@ let g:ycm_global_ycm_extra_conf = '/home/paul/\.ycm_extra_conf\.py'
 let g:vimtex_compiler_progname = 'nvr'
 " Sometimes tex files detected as plaintext, this option prevents it
 let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'zathura'
 
 " Golang
 let g:go_highlight_build_constraints = 1
