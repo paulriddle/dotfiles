@@ -12,7 +12,6 @@ Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
-Plug 'chriskempson/base16-vim'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'elixir-editors/vim-elixir'
@@ -105,7 +104,11 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-colorscheme nofrils-dark
+if $LIGHT_COLORSCHEME ==? "1"
+  colorscheme nofrils-acme
+else
+  colorscheme nofrils-dark
+endif
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
