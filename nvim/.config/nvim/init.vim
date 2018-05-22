@@ -104,7 +104,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-if $LIGHT_COLORSCHEME ==? "1"
+if $LIGHT_COLORSCHEME ==# "1"
   colorscheme nofrils-acme
 else
   colorscheme nofrils-dark
