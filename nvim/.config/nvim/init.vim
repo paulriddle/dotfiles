@@ -48,6 +48,7 @@ autocmd FileType c setlocal ts=4 sts=4 sw=4 noexpandtab
 
 set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
+autocmd FileType eruby.yaml setlocal textwidth=120
 
 set smartindent
 " Jump to the matching bracket for 0.5 second when inserting new one
