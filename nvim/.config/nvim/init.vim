@@ -22,6 +22,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/gv.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
+Plug 'lervag/vimtex'
 Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
@@ -129,6 +130,15 @@ augroup ruby_mappings
   autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
   autocmd FileType ruby nnoremap <buffer> <leader>s :FZF spec<cr>
 augroup END
+
+" vimtex
+"
+" neovim doesn't support --remote and compiled withut clientserver anyway, nvr
+" is a tool written in python that serves as a workaround.
+let g:vimtex_compiler_progname = 'nvr'
+" Sometimes tex files detected as plaintext, this option prevents it
+let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'zathura'
 
 " Golang
 let g:go_highlight_build_constraints = 1
