@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'robertmeta/nofrils'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe'
@@ -20,6 +19,7 @@ Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
 Plug 'lervag/wiki'
 Plug 'pangloss/vim-javascript'
+Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-commentary'
