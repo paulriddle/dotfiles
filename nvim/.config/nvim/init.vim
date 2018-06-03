@@ -68,6 +68,11 @@ let maplocalleader="_"
 " Do not highlight matching parens, it's annoying and showmatch is sufficient
 let loaded_matchparen = 1
 
+" Sometimes I'm not fast enough and don't release shift when I should
+command! W :w
+command! E :e
+command! Q :q
+
 " Swap ^ and $ with B and E
 nnoremap B ^
 nnoremap E $
