@@ -17,6 +17,7 @@ Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
 Plug 'pangloss/vim-javascript'
+Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-abolish'
@@ -95,9 +96,7 @@ set cursorline
 set number
 set relativenumber
 
-" Required by the current colorscheme
-let base16colorspace=256
-colorscheme modified-github-light
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
