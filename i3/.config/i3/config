@@ -5,7 +5,7 @@
 floating_modifier Mod1
 
 bindsym Mod1+Return exec urxvt
-bindsym Mod1+d exec dmenu_run -fn 'Dina-12'
+bindsym Mod1+d exec dmenu_run -fn 'Dina-8'
 
 # Kill focused window.
 bindsym Mod4+q kill
@@ -32,6 +32,9 @@ bindsym Mod1+e layout toggle split
 bindsym Mod4+space floating toggle
 bindsym Mod1+space focus mode_toggle
 bindsym Mod1+a focus parent
+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 
 bindsym Mod1+1 workspace 1
 bindsym Mod1+2 workspace 2
@@ -82,5 +85,5 @@ bindsym Mod1+r mode "resize"
 bar {
   status_command i3status
   tray_output primary
-  font xft:Dina, FontAwesome 12
+  font xft:Dina, FontAwesome 8
 }
