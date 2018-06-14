@@ -96,7 +96,9 @@ set cursorline
 set number
 set relativenumber
 
-colorscheme nofrils-acme
+" Required by the colorscheme
+let base16colorspace=256
+colorscheme modified-github-light
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
