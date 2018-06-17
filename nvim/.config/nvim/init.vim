@@ -10,6 +10,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'exu/pgsql.vim'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
+Plug 'itchyny/lightline.vim'
 Plug 'jez/vim-better-sml'
 Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -123,6 +124,13 @@ nnoremap k gk
 " Ergonomic escape
 inoremap jk <esc>
 inoremap <esc> <nop>
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'PaperColor',
+      \ }
+" Disable INSERT mode display at the bottom, because lightline already shows it
+set noshowmode
 
 " fzf
 nnoremap <leader>f :FZF<cr>
