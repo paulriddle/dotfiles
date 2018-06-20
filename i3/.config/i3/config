@@ -67,6 +67,7 @@ bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do 
 new_window pixel
 new_float pixel
 hide_edge_borders both
+gaps inner 5
 
 focus_follows_mouse no
 
