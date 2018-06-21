@@ -103,11 +103,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-if $LIGHT_COLORSCHEME ==# "1"
-  colorscheme nofrils-acme
-else
-  colorscheme nofrils-dark
-endif
+colorscheme nofrils-light
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>

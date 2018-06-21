@@ -1,6 +1,5 @@
 if status --is-interactive
   source (rbenv init -|psub)
-  eval sh $HOME/.config/base16-shell/scripts/base16-classic-dark.sh
 end
 
 start_agent
