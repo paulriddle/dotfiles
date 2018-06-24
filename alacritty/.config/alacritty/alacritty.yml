@@ -76,11 +76,11 @@ colors:
   normal:
     black:   '0x000000'
     red:     '0xc94045'
-    green:   '0x45c940'
-    yellow:  '0xe6c547'
+    green:   '0x3a8e4c'
+    yellow:  '0x6f7070'
     blue:    '0x7aa6da'
     magenta: '0xc397d8'
-    cyan:    '0x70c0ba'
+    cyan:    '0x10c0ba'
     white:   '0xffffff'
 
   bright:
@@ -91,7 +91,7 @@ colors:
     blue:    '0x7aa6da'
     magenta: '0xb77ee0'
     cyan:    '0x54ced6'
-    white:   '0xffffff'
+    white:   '0x65bfbf'
 
   dim:
     black:   '0x333333'
