@@ -80,14 +80,14 @@ colors:
     yellow:  '0x6f7070'
     blue:    '0x7aa6da'
     magenta: '0xc397d8'
-    cyan:    '0x10c0ba'
+    cyan:    '0x424242'
     white:   '0xffffff'
 
   bright:
-    black:   '0x666666'
+    black:   '0xe5e547'
     red:     '0xff3334'
     green:   '0x9ec400'
-    yellow:  '0xe7c547'
+    yellow:  '0x7aa6da'
     blue:    '0x7aa6da'
     magenta: '0xb77ee0'
     cyan:    '0x54ced6'
