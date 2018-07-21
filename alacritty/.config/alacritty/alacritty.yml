@@ -61,37 +61,33 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: false
 
-# Colors (Tomorrow Night Bright)
 colors:
   # Default colors
   primary:
-    background: '0xf4f4f4'
-    foreground: '0x60605f'
+    background: '0xffffd7'
+    foreground: '0x586e75'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x2b2b2b'
-    cursor: '0xffffff'
-
+  # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xc94045'
-    green:   '0x3a8e4c'
-    yellow:  '0x6f7070'
-    blue:    '0x7aa6da'
-    magenta: '0xc397d8'
-    cyan:    '0x424242'
-    white:   '0xffffff'
+    black:   '0x073642'
+    red:     '0xdc322f'
+    green:   '0x859900'
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0xd33682'
+    cyan:    '0x2aa198'
+    white:   '0xeee8d5'
 
+  # Bright colors
   bright:
-    black:   '0xe5e547'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0x7aa6da'
-    blue:    '0x7aa6da'
-    magenta: '0xb77ee0'
-    cyan:    '0x54ced6'
-    white:   '0x65bfbf'
+    black:   '0x002b36'
+    red:     '0xcb4b16'
+    green:   '0x586e75'
+    yellow:  '0x657b83'
+    blue:    '0x839496'
+    magenta: '0x6c71c4'
+    cyan:    '0x93a1a1'
+    white:   '0xfdf6e3'
 
   dim:
     black:   '0x333333'
