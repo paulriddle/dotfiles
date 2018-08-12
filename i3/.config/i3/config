@@ -64,8 +64,8 @@ bindsym Mod4+r restart
 bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Pixel borders, with no borders on the sides of display
-new_window pixel
-new_float pixel
+default_border none
+default_floating_border pixel
 hide_edge_borders both
 
 focus_follows_mouse no
