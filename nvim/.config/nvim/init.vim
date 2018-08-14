@@ -7,7 +7,6 @@ Plug 'cespare/vim-toml'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'elixir-editors/vim-elixir'
-Plug 'exu/pgsql.vim'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
@@ -180,4 +179,3 @@ function! s:build_go_files()
 endfunction
 
 let g:jsx_ext_required = 0
-let g:sql_type_default = 'pgsql'
