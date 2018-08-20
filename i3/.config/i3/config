@@ -11,7 +11,7 @@ workspace 7 output HDMI-3
 workspace 8 output HDMI-3
 workspace 9 output HDMI-3
 workspace 10 output HDMI-3
-bindsym Mod1+Return exec ~/.cargo/bin/alacritty
+bindsym Mod1+Return exec urxvt
 # Mod4 is Win. Kill focused window.
 bindsym Mod4+q kill
 bindsym Mod1+d exec dmenu_run -fn 'Dina-4'
