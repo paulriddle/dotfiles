@@ -179,3 +179,6 @@ function! s:build_go_files()
 endfunction
 
 let g:jsx_ext_required = 0
+
+" Abbreviations
+iabbrev TBA To be answered.
