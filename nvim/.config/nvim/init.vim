@@ -15,16 +15,11 @@ Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
 Plug 'lervag/wiki'
-Plug 'pangloss/vim-javascript'
 Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
-Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -177,8 +172,6 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
-
-let g:jsx_ext_required = 0
 
 " Abbreviations
 iabbrev TBA To be answered.
