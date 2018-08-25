@@ -11,7 +11,6 @@ Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
 Plug 'jez/vim-better-sml'
-Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
