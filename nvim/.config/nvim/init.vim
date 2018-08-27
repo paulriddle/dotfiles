@@ -98,7 +98,7 @@ set relativenumber
 
 " Required by the colorscheme
 let base16colorspace=256
-colorscheme nofrils-acme
+colorscheme base16-gruvbox-dark-medium
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>

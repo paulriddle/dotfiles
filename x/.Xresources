@@ -1,5 +1,5 @@
 URxvt.scrollBar: false
-URxvt*font: xft:Input Mono:size=8
+URxvt*font: xft:Dina:size=8
 
 #define S_base03        #002b36
 #define S_base02        #073642
