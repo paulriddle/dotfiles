@@ -139,7 +139,7 @@ let g:ycm_filetype_blacklist = {
 " Do not bother me with confirmation questions every time I open a file
 let g:ycm_confirm_extra_conf = 0
 " Default conf file for C
-let g:ycm_global_ycm_extra_conf = '/home/paul/\.ycm_extra_conf\.py'
+let g:ycm_global_ycm_extra_conf = '/home/riddle/\.ycm_extra_conf\.py'
 
 " vimtex
 "
