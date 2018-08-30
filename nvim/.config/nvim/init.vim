@@ -23,6 +23,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
+Plug 'whatyouhide/vim-lengthmatters'
 call plug#end()
 
 " Tab settings
