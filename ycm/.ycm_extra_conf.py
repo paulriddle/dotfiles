@@ -4,11 +4,9 @@ import os
 
 flags = [
 '-Wall',
-'-W',
 '-Werror',
 '-x',
 'c',
-'-O0'
 ]
 
 SOURCE_EXTENSIONS = [ '.c' ]
