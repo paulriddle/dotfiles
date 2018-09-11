@@ -6,7 +6,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'elixir-editors/vim-elixir'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
@@ -140,6 +139,9 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_confirm_extra_conf = 0
 " Default conf file for C
 let g:ycm_global_ycm_extra_conf = '/home/riddle/\.ycm_extra_conf\.py'
+
+nnoremap <leader>jd :YcmCompleter GoTo<cr>
+nnoremap <leader>x :YcmCompleter FixIt<cr>
 
 " vimtex
 "
