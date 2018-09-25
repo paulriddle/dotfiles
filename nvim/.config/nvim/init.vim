@@ -29,7 +29,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
-Plug 'whatyouhide/vim-lengthmatters'
 call plug#end()
 
 " Tab settings
