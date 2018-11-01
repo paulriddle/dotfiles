@@ -1,7 +1,7 @@
 if status --is-interactive
-  set BASE16_SHELL "$HOME/.config/base16-shell/"
-  source "$BASE16_SHELL/profile_helper.fish"
-  eval sh $HOME/.config/base16-shell/scripts/base16-gruvbox-dark-medium.sh
+  # set BASE16_SHELL "$HOME/.config/base16-shell/"
+  # source "$BASE16_SHELL/profile_helper.fish"
+  # eval sh $HOME/.config/base16-shell/scripts/base16-github.sh
   source (rbenv init -|psub)
 end
 
