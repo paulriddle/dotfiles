@@ -102,7 +102,7 @@ set relativenumber
 
 " Required by the colorscheme
 let base16colorspace=256
-colorscheme goodwolf
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
