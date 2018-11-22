@@ -3,16 +3,30 @@ draw_bold_text_with_bright_colors: true
 dynamic_title: true
 live_config_reload: true
 render_timer: false
+# A tab is 4 spaces
 tabspaces: 4
 
 window:
-  dimensions:
-    columns: 80
-    lines: 24
-  padding:
-    x: 2
-    y: 2
+  # Don't bother maximazing, no decorations, and zero dimensions since I'm using a tiling WM
+  start_maximized: false
   decorations: none
+  dimensions:
+    columns: 0
+    lines: 0
+  # Minimal padding to maximaze screen real estate
+  padding:
+    x: 4
+    y: 4
+  dynamic_padding: true
+
+scrolling:
+  history: 10000
+  # Number of lines the viewport will move for every line scrolled
+  multiplier: 3
+  # So that I can scroll within applications like `man`
+  faux_multiplier: 3
+  # Don't scroll to the bottom when new text is written to the terminal
+  auto_scroll: false
 
 font:
   normal:
@@ -71,8 +85,6 @@ mouse_bindings:
 mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
-  # TODO: Remove when introduce `scrolling` section.
-  faux_scrolling_lines: 1
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
