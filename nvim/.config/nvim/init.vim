@@ -121,7 +121,7 @@ inoremap jk <esc>
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
+      \ 'colorscheme': 'solarized',
       \ }
 " Disable INSERT mode display at the bottom, because lightline already shows it
 set noshowmode
