@@ -122,7 +122,15 @@ inoremap jk <esc>
 " Lightline
 let g:lightline = {
       \ 'colorscheme': 'solarized',
+      \ 'component_function': {
+      \   'filename': 'FilenameForLightline'
       \ }
+      \ }
+
+" Show full path of filename
+function! FilenameForLightline()
+  return expand('%')
+endfunction
 " Disable INSERT mode display at the bottom, because lightline already shows it
 set noshowmode
 
