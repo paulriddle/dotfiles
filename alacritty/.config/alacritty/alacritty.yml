@@ -3,8 +3,7 @@ draw_bold_text_with_bright_colors: true
 dynamic_title: true
 live_config_reload: true
 render_timer: false
-# A tab is 4 spaces
-tabspaces: 4
+tabspaces: 8
 
 window:
   # Don't bother maximazing, no decorations, and zero dimensions since I'm using a tiling WM
