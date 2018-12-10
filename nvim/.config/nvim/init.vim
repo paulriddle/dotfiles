@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
@@ -29,7 +28,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 call plug#end()
 
 " Tab settings
@@ -141,18 +139,6 @@ augroup ruby_mappings
   autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
   autocmd FileType ruby nnoremap <buffer> <leader>s :FZF spec<cr>
 augroup END
-
-" YouCompleteMe
-let g:ycm_filetype_blacklist = {
-      \ 'fzf' : 1,
-      \}
-" Do not bother me with confirmation questions every time I open a file
-let g:ycm_confirm_extra_conf = 0
-" Default conf file for C
-let g:ycm_global_ycm_extra_conf = $HOME . '/\.ycm_extra_conf\.py'
-
-nnoremap <leader>jd :YcmCompleter GoTo<cr>
-nnoremap <leader>x :YcmCompleter FixIt<cr>
 
 " vimtex
 "
