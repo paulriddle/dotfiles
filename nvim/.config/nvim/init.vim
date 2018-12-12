@@ -181,3 +181,7 @@ let g:ale_linters = {
       \ }
 
 let g:ale_ruby_rubocop_options = '-c ~/.config/rubocop/ruby.yml'
+
+" There is another python on my system at /bin/python, so I set this variable to
+" avoid confusion
+let g:python3_host_prog = '/usr/bin/python'
