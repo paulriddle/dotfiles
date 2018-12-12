@@ -194,3 +194,6 @@ Style/GuardClause:
   Description: Check for conditionals that can be replaced with guard clauses
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals
   Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
