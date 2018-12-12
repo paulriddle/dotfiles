@@ -180,7 +180,7 @@ let g:ale_linters = {
       \ 'ruby': ['rubocop'],
       \ }
 
-let g:ale_ruby_rubocop_options = '-c ~/.config/rubocop/ruby.yml'
+let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
 
 " There is another python on my system at /bin/python, so I set this variable to
 " avoid confusion
