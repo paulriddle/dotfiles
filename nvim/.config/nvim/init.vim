@@ -28,6 +28,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Tab settings
@@ -173,3 +174,10 @@ function! s:build_go_files()
 endfunction
 
 let g:jsx_ext_required = 0
+
+" Ale
+let g:ale_linters = {
+      \ 'ruby': ['rubocop'],
+      \ }
+
+let g:ale_ruby_rubocop_options = '-c ~/.config/rubocop/ruby.yml'
