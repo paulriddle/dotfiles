@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'danro/rename.vim'
@@ -9,12 +8,10 @@ Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
-Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
-Plug 'lervag/wiki'
 Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
@@ -22,6 +19,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Tab settings
@@ -63,7 +61,6 @@ let loaded_matchparen = 1
 
 " Sometimes I'm not fast enough and don't release shift when I should
 command! W :w
-command! E :e
 command! Q :q
 
 " Swap ^ and $ with B and E
@@ -102,7 +99,7 @@ nnoremap <leader>l :set list!<cr>
 " Clear search highlighting
 nnoremap <leader><space> :nohlsearch<cr>
 
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <space> za
 
 " Make j and k not ignore wrapped parts of lines
@@ -129,18 +126,6 @@ augroup ruby_mappings
   autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
   autocmd FileType ruby nnoremap <buffer> <leader>s :FZF spec<cr>
 augroup END
-
-" YouCompleteMe
-let g:ycm_filetype_blacklist = {
-      \ 'fzf' : 1,
-      \}
-" Do not bother me with confirmation questions every time I open a file
-let g:ycm_confirm_extra_conf = 0
-" Default conf file for C
-let g:ycm_global_ycm_extra_conf = '/home/riddle/\.ycm_extra_conf\.py'
-
-nnoremap <leader>jd :YcmCompleter GoTo<cr>
-nnoremap <leader>x :YcmCompleter FixIt<cr>
 
 " vimtex
 "
@@ -173,6 +158,3 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
-
-" Abbreviations
-iabbrev TBA To be answered.
