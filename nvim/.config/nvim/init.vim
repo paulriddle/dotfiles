@@ -178,6 +178,7 @@ let g:jsx_ext_required = 0
 " Ale
 let g:ale_linters = {
       \ 'ruby': ['rubocop'],
+      \ 'c': ['clangd'],
       \ }
 
 let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
