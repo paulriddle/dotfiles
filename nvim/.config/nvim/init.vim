@@ -3,6 +3,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
+Plug 'chriskempson/base16-vim'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
@@ -12,7 +13,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
-Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -92,7 +92,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-colorscheme nofrils-dark
+colorscheme base16-gruvbox-dark-soft
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
