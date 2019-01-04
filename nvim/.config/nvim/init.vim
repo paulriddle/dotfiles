@@ -9,6 +9,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
+Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
@@ -158,3 +159,6 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
+
+" I don't have 'sml' binary, so
+let g:sml_smlnj_executable = '/usr/bin/smlnj'
