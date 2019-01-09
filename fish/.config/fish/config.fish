@@ -1,8 +1,7 @@
 if status --is-interactive
-  # set BASE16_SHELL "$HOME/.config/base16-shell/"
-  # source "$BASE16_SHELL/profile_helper.fish"
-  # eval sh $HOME/.config/base16-shell/scripts/base16-github.sh
   source (rbenv init -|psub)
+  set BASE16_SHELL "$HOME/.config/base16-shell/"
+  source "$BASE16_SHELL/profile_helper.fish"
 end
 
 start_agent
