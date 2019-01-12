@@ -162,3 +162,19 @@ endfunction
 
 " I don't have 'sml' binary, so
 let g:sml_smlnj_executable = '/usr/bin/smlnj'
+let g:sml_auto_create_def_use = 'always'
+
+augroup smlMaps
+  au!
+  au FileType sml nnoremap <leader>t :SMLTypeQuery<CR>
+  au FileType sml nnoremap gd :SMLJumpToDef<CR>
+
+  au FileType sml nnoremap <silent> <buffer> <leader>is :SMLReplStart<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>ik :SMLReplStop<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>if :SMLReplBuild<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>io :SMLReplOpen<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>iu :SMLReplUse<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>ic :SMLReplClear<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>ip :SMLReplPrintDepth<CR>
+  au FileType sml nnoremap <silent> <buffer> <leader>iz :SMLReplShell<CR>
+augroup END
