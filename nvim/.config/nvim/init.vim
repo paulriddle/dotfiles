@@ -178,3 +178,9 @@ augroup smlMaps
   au FileType sml nnoremap <silent> <buffer> <leader>ip :SMLReplPrintDepth<CR>
   au FileType sml nnoremap <silent> <buffer> <leader>iz :SMLReplShell<CR>
 augroup END
+
+" Ale
+"
+" I don't like being disturbed while typing. Lint only on filesave.
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
