@@ -106,7 +106,7 @@ nnoremap <leader>l :set list!<cr>
 " Clear search highlighting
 nnoremap <leader><space> :nohlsearch<cr>
 
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <space> za
 
 " Make j and k not ignore wrapped parts of lines
