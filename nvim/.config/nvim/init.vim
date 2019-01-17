@@ -176,6 +176,10 @@ endfunction
 let g:jsx_ext_required = 0
 
 " Ale
+"
+" I don't like being disturbed while typing. Lint only on filesave.
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 let g:ale_linters = {
       \ 'ruby': ['rubocop'],
       \ 'c': ['clangd'],
