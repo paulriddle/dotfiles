@@ -184,6 +184,11 @@ let g:ale_linters = {
       \ 'ruby': ['rubocop'],
       \ 'c': ['clangd'],
       \ }
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'c': ['clang-format']
+      \ }
 
 let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
 let g:ale_c_gcc_executable = 'musl-gcc'
