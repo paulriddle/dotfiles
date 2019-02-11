@@ -4,7 +4,6 @@ Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
-Plug 'chriskempson/base16-vim'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
@@ -99,7 +98,7 @@ set relativenumber
 
 " Required by the colorscheme
 let base16colorspace=256
-colorscheme base16-gruvbox-dark-soft
+colorscheme base16-atlas
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
