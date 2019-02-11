@@ -180,7 +180,17 @@ augroup smlMaps
 augroup END
 
 " Ale
-"
+nmap <silent> <f3> <Plug>(ale_next_wrap)
+nmap <silent> <f4> <Plug>(ale_previous_wrap)
 " I don't like being disturbed while typing. Lint only on filesave.
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+let g:ale_linters = {
+      \ 'ruby': ['rubocop'],
+      \ 'c': ['clangd'],
+      \ }
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'c': ['clang-format']
+      \ }
