@@ -29,11 +29,11 @@ scrolling:
 
 font:
   normal:
-    family: Dina
+    family: Input Mono
   bold:
-    family: Dina
+    family: Input Mono
   italic:
-    family: Dina
+    family: Input Mono
   size: 8.0
   offset:
     x: 0
