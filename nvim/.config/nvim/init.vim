@@ -134,6 +134,10 @@ set noshowmode
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>bf :Buffers<cr>
 
+let g:fzf_colors = {
+      \ 'fg': ['fg', 'Debug'],
+      \ }
+
 augroup ruby_mappings
   autocmd!
   autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
