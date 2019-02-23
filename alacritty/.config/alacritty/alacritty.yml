@@ -344,6 +344,8 @@ shell:
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }
   - { key: C,        mods: Control|Shift,    action: Copy                }
+  # Open new terminal in the same directory
+  - { key: N,        mods: Alt,              action: SpawnNewInstance    }
   - { key: Paste,                   action: Paste                        }
   - { key: Copy,                    action: Copy                         }
   - { key: Q,        mods: Command, action: Quit                         }
