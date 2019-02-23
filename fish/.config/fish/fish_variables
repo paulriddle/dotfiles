@@ -4,6 +4,7 @@ SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fish_abbr_vi3bl:vi\x20/home/interpreter/\x2econfig/i3blocks/config
+SETUVAR _fish_abbr_viala:vi\x20/home/interpreter/\x2econfig/alacritty/alacritty\x2eyml
 SETUVAR _fish_abbr_vsway:vi\x20/home/interpreter/\x2econfig/sway/config
 SETUVAR fish_color_autosuggestion:8e908c
 SETUVAR fish_color_cancel:\x2dr
