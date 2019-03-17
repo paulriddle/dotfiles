@@ -93,7 +93,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-colorscheme modified-github-light
+colorscheme base16-railscasts
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
