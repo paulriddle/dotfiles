@@ -131,36 +131,36 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0x2b2b2b'
-    foreground: '0xe6e1dc'
+    background: '0x1b1918'
+    foreground: '0xa8a19f'
   cursor:
-    text: '0x2b2b2b'
-    cursor: '0xe6e1dc'
+    text: '0x1b1918'
+    cursor: '0xa8a19f'
   normal:
-    black:   '0x2b2b2b'
-    red:     '0xda4939'
-    green:   '0xa5c261'
-    yellow:  '0xffc66d'
-    blue:    '0x6d9cbe'
-    magenta: '0xb6b3eb'
-    cyan:    '0x519f50'
-    white:   '0xe6e1dc'
+    black:   '0x1b1918'
+    red:     '0xf22c40'
+    green:   '0x7b9726'
+    yellow:  '0xc38418'
+    blue:    '0x407ee7'
+    magenta: '0x6666ea'
+    cyan:    '0x3d97b8'
+    white:   '0xa8a19f'
   bright:
-    black:   '0x5a647e'
-    red:     '0xda4939'
-    green:   '0xa5c261'
-    yellow:  '0xffc66d'
-    blue:    '0x6d9cbe'
-    magenta: '0xb6b3eb'
-    cyan:    '0x519f50'
-    white:   '0xf9f7f3'
+    black:   '0x766e6b'
+    red:     '0xf22c40'
+    green:   '0x7b9726'
+    yellow:  '0xc38418'
+    blue:    '0x407ee7'
+    magenta: '0x6666ea'
+    cyan:    '0x3d97b8'
+    white:   '0xf1efee'
   indexed_colors:
-    - { index: 16, color: '0xcc7833' }
-    - { index: 17, color: '0xbc9458' }
-    - { index: 18, color: '0x272935' }
-    - { index: 19, color: '0x3a4055' }
-    - { index: 20, color: '0xd4cfc9' }
-    - { index: 21, color: '0xf4f1ed' }
+    - { index: 16, color: '0xdf5320' }
+    - { index: 17, color: '0xc33ff3' }
+    - { index: 18, color: '0x2c2421' }
+    - { index: 19, color: '0x68615e' }
+    - { index: 20, color: '0x9c9491' }
+    - { index: 21, color: '0xe6e2e0' }
 
 # Visual Bell
 #

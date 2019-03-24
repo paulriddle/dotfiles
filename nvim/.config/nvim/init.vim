@@ -94,7 +94,7 @@ set relativenumber
 
 " Required by the current colorscheme
 let base16colorspace=256
-colorscheme base16-railscasts
+colorscheme base16-atelier-forest
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -114,7 +114,7 @@ inoremap <esc> <nop>
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
+      \ 'colorscheme': 'seoul256',
       \ }
 " Disable INSERT mode display at the bottom, because lightline already shows it
 set noshowmode
