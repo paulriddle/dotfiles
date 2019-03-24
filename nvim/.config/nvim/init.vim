@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Shougo/deoplete-clangx'
 Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
@@ -198,3 +199,5 @@ let g:ale_fixers = {
 
 " Deoplette
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#var('clangx', 'clang_binary', '/usr/bin/musl-clang')
+call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
