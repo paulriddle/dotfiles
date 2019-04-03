@@ -5,7 +5,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
-Plug 'chriskempson/base16-vim'
+Plug 'robertmeta/nofrils'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
@@ -53,6 +53,8 @@ set listchars=tab:▸\ ,trail:-,nbsp:+
 set shell=/usr/bin/fish
 " So that I don't have to call :w before GoBuild, make, etc.
 set autowrite
+" Disable annoying scratch window on autocompletion
+set completeopt-=preview
 
 " Leader is , reverse character search is \
 let mapleader=","
@@ -82,6 +84,9 @@ tnoremap <c-k> <c-\><c-n><c-w>k
 tnoremap <c-h> <c-\><c-n><c-w>h
 tnoremap <c-l> <c-\><c-n><c-w>l
 
+" Resize splits
+nnoremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<cr>
+
 " Exit terminal mode with esc
 tnoremap <esc> <c-\><c-n>
 " Don't forget about esc though, map it to alt-[
@@ -94,8 +99,8 @@ set number
 set relativenumber
 
 " Required by the current colorscheme
-let base16colorspace=256
-colorscheme base16-atelier-forest
+set termguicolors
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
