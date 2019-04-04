@@ -3,7 +3,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
-Plug 'chriskempson/base16-vim'
 Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
@@ -17,6 +16,7 @@ Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
 Plug 'pangloss/vim-javascript'
+Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-abolish'
@@ -85,6 +85,9 @@ tnoremap <c-k> <c-\><c-n><c-w>k
 tnoremap <c-h> <c-\><c-n><c-w>h
 tnoremap <c-l> <c-\><c-n><c-w>l
 
+" Resize splits
+nnoremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<cr>
+
 " Exit terminal mode with esc
 tnoremap <esc> <c-\><c-n>
 " Don't forget about esc though, map it to alt-[
@@ -97,8 +100,8 @@ set number
 set relativenumber
 
 " Required by the colorscheme
-let base16colorspace=256
-colorscheme modified-github-light
+set termguicolors
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
