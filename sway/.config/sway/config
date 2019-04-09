@@ -1,0 +1,133 @@
+# jod4 is cmd. Mouse+Mod4 to drag floating windows.
+floating_modifier Mod4
+output HDMI-A-3 pos 0 0 res 1920x1080
+output HDMI-A-1 pos 1920 0 res 1920x1080
+workspace 1 output HDMI-A-3
+workspace 2 output HDMI-A-3
+workspace 3 output HDMI-A-3
+workspace 4 output HDMI-A-3
+workspace 5 output HDMI-A-3
+workspace 6 output HDMI-A-1
+workspace 7 output HDMI-A-1
+workspace 8 output HDMI-A-1
+workspace 9 output HDMI-A-1
+workspace 10 output HDMI-A-1
+# This comment makes ft=conf
+set $win Mod4
+set $alt Mod1
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $term alacritty
+set $menu dmenu_run
+
+# Start a terminal
+bindsym $alt+Return exec $term
+# Kill focused window
+bindsym $win+Shift+q kill
+# Start launcher
+bindsym $alt+d exec $menu
+# Drag floating windows by holding down $alt and left mouse button.
+# Resize them with right mouse button + $alt.
+# Despite the name, also works for non-floating windows.
+floating_modifier $alt normal
+# Reload the configuration file
+bindsym $win+Shift+c reload
+# Exit sway (logs you out of your wayland session)
+bindsym $win+Shift+e exit
+
+# Move your focus around
+bindsym $alt+$left focus left
+bindsym $alt+$down focus down
+bindsym $alt+$up focus up
+bindsym $alt+$right focus right
+# Move the focused window
+bindsym $win+$left move left
+bindsym $win+$down move down
+bindsym $win+$up move up
+bindsym $win+$right move right
+
+focus_follows_mouse no
+
+# Switch to workspace
+bindsym $alt+1 workspace 1
+bindsym $alt+2 workspace 2
+bindsym $alt+3 workspace 3
+bindsym $alt+4 workspace 4
+bindsym $alt+5 workspace 5
+bindsym $alt+6 workspace 6
+bindsym $alt+7 workspace 7
+bindsym $alt+8 workspace 8
+bindsym $alt+9 workspace 9
+bindsym $alt+0 workspace 10
+# Move focused container to workspace
+bindsym $win+1 move container to workspace 1
+bindsym $win+2 move container to workspace 2
+bindsym $win+3 move container to workspace 3
+bindsym $win+4 move container to workspace 4
+bindsym $win+5 move container to workspace 5
+bindsym $win+6 move container to workspace 6
+bindsym $win+7 move container to workspace 7
+bindsym $win+8 move container to workspace 8
+bindsym $win+9 move container to workspace 9
+bindsym $win+0 move container to workspace 10
+
+# Split the current object of your focus with $alt+b or $alt+v, for horizontal
+# and vertical splits respectively
+bindsym $alt+b splith
+bindsym $alt+v splitv
+
+# Switch the current container between different layout styles
+bindsym $alt+s layout stacking
+bindsym $alt+w layout tabbed
+bindsym $alt+e layout toggle split
+# Make the current focus fullscreen
+bindsym $alt+f fullscreen
+# Toggle the current focus between tiling and floating mode
+bindsym $win+Shift+space floating toggle
+# Swap focus between the tiling area and the floating area
+bindsym $win+space focus mode_toggle
+# Move focus to the parent container
+bindsym $win+a focus parent
+# Move the currently focused window to the scratchpad
+bindsym $win+Shift+minus move scratchpad
+# Show the next scratchpad window or hide the focused scratchpad window. If
+# there are multiple scratchpad windows, this command cycles through them.
+bindsym $win+minus scratchpad show
+# Disable window borders
+default_border none
+
+# Resizing containers
+bindsym $alt+r mode "resize"
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10 px or 10 ppt
+    bindsym $down resize grow height 10 px or 10 ppt
+    bindsym $up resize shrink height 10 px or 10 ppt
+    bindsym $right resize grow width 10 px or 10 ppt
+    # ditto, with arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bar {
+    status_command i3blocks
+    colors {
+        statusline #ffffff
+        background #323232
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+include /etc/sway/config.d/*
