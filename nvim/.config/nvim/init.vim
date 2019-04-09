@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Shougo/deoplete-clangx'
+Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
@@ -184,6 +186,7 @@ let g:jsx_ext_required = 0
 " Ale
 nmap <silent> <f3> <Plug>(ale_next_wrap)
 nmap <silent> <f4> <Plug>(ale_previous_wrap)
+nmap <leader>gg <Plug>(ale_go_to_definition)
 " I don't like being disturbed while typing. Lint only on filesave.
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
@@ -206,3 +209,8 @@ let g:ale_c_clang_optinos = '-std=c17 -Wall'
 " There is another python on my system at /bin/python, so I set this variable to
 " avoid confusion
 let g:python3_host_prog = '/usr/bin/python'
+
+" Deoplette
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#var('clangx', 'clang_binary', '/usr/bin/musl-clang')
+call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
