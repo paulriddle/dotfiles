@@ -86,6 +86,7 @@ bindsym $win+Shift+minus move scratchpad
 bindsym $win+minus scratchpad show
 # Disable window borders
 default_border none
+focus_follows_mouse no
 
 # Resizing containers
 bindsym $alt+r mode "resize"
