@@ -60,6 +60,7 @@ bindsym Mod4+0 move container to workspace 10
 
 bindsym Mod4+c reload
 bindsym Mod4+r restart
+bindsym Mod4+Shift+e exit
 
 bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
