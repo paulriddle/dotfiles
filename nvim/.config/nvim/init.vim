@@ -118,10 +118,6 @@ nnoremap k gk
 inoremap jk <esc>
 inoremap <esc> <nop>
 
-" Lightline
-let g:lightline = {
-      \ 'colorscheme': 'seoul256',
-      \ }
 " Disable INSERT mode display at the bottom, because lightline already shows it
 set noshowmode
 
