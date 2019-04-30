@@ -38,7 +38,7 @@ font:
     family: monospace
   italic:
     family: monospace
-  size: 6.0
+  size: 10.0
   offset:
     x: 0
     y: 0
