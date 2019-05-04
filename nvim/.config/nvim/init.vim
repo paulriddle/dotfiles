@@ -202,3 +202,8 @@ let g:ale_fixers = {
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#var('clangx', 'clang_binary', '/usr/bin/musl-clang')
 call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
