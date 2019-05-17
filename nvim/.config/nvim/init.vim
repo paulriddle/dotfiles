@@ -207,3 +207,9 @@ call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<c-b>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
