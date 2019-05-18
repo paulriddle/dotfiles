@@ -13,6 +13,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
 Plug 'robertmeta/nofrils'
@@ -213,3 +214,6 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<c-b>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
+
+" Goyo
+nnoremap <leader>w :Goyo<cr>
