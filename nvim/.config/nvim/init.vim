@@ -14,6 +14,7 @@ Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
 Plug 'robertmeta/nofrils'
@@ -215,5 +216,12 @@ let g:UltiSnipsJumpForwardTrigger = '<c-b>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
 
-" Goyo
+" Goyo and Limelight
 nnoremap <leader>w :Goyo<cr>
+" Turn off Limelight
+nnoremap <leader>g :Limelight!<cr>
+" Activate Limelight on visual selection
+xmap <leader>g <Plug>(Limelight)
+" Automatically toggle Limelight when using Goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
