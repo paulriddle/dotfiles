@@ -214,3 +214,8 @@ let g:python3_host_prog = '/usr/bin/python'
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#var('clangx', 'clang_binary', '/usr/bin/musl-clang')
 call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<c-b>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
