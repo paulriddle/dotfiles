@@ -33,12 +33,12 @@ tabspaces: 4
 
 font:
   normal:
-    family: monospace
+    family: Noto Sans Mono
   bold:
-    family: monospace
+    family: Noto Sans Mono
   italic:
-    family: monospace
-  size: 10.0
+    family: Noto Sans Mono
+  size: 8.5
   offset:
     x: 0
     y: 0
