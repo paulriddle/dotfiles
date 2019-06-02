@@ -137,6 +137,7 @@ augroup END
 " neovim doesn't support --remote and compiled withut clientserver anyway, nvr
 " is a tool written in python that serves as a workaround.
 let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_compiler_method = 'tectonic'
 " Sometimes tex files detected as plaintext, this option prevents it
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
