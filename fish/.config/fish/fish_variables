@@ -36,4 +36,3 @@ SETUVAR fish_pager_color_completion:green
 SETUVAR fish_pager_color_description:B3A06D
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR --export fish_user_paths:/home/interpreter/\x2erbenv/bin\x1e/home/interpreter/\x2efzf/bin\x1e/home/interpreter/bin
