@@ -33,11 +33,11 @@ tabspaces: 4
 
 font:
   normal:
-    family: Noto Sans Mono
+    family: Input Mono
   bold:
-    family: Noto Sans Mono
+    family: Input Mono
   italic:
-    family: Noto Sans Mono
+    family: Input Mono
   size: 8.5
   offset:
     x: 0
@@ -53,29 +53,29 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0xffffd7'
-    foreground: '0x504945'
+    background: '0x000000'
+    foreground: '0xffffff'
   cursor:
-    text: '0xf9f5d7'
-    cursor: '0x504945'
+    text: '0x000000'
+    cursor: '0xffffff'
   normal:
-    black:   '0xf9f5d7'
-    red:     '0x9d0006'
-    green:   '0x79740e'
-    yellow:  '0xb57614'
-    blue:    '0x076678'
-    magenta: '0x8f3f71'
-    cyan:    '0x427b58'
-    white:   '0x504945'
+    black:   '0x4e4e4e'
+    red:     '0xff6c60'
+    green:   '0xa8ff60'
+    yellow:  '0xffffb6'
+    blue:    '0x96cbfe'
+    magenta: '0xff73fd'
+    cyan:    '0xc6c5fe'
+    white:   '0xeeeeee'
   bright:
-    black:   '0xbdae93'
-    red:     '0x9d0006'
-    green:   '0x79740e'
-    yellow:  '0xb57614'
-    blue:    '0x076678'
-    magenta: '0x8f3f71'
-    cyan:    '0x427b58'
-    white:   '0x282828'
+    black:   '0x7c7c7c'
+    red:     '0xffb6b0'
+    green:   '0xceffab'
+    yellow:  '0xffffcb'
+    blue:    '0xb5dcfe'
+    magenta: '0xff9cfe'
+    cyan:    '0xdfdffe'
+    white:   '0xffffff'
   indexed_colors:
     - { index: 16, color: '0xaf3a03' }
     - { index: 17, color: '0xd65d0e' }
