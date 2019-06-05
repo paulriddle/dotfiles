@@ -201,10 +201,7 @@ let g:ale_fixers = {
       \ }
 
 let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
-let g:ale_c_gcc_executable = 'musl-gcc'
-let g:ale_c_gcc_options = '-std=c18 -Wall'
-let g:ale_clang_executable = 'musl-clang'
-let g:ale_c_clang_optinos = '-std=c17 -Wall'
+let g:ale_c_clang_options = '-std=c17 -Wall'
 
 " There is another python on my system at /bin/python, so I set this variable to
 " avoid confusion
