@@ -33,12 +33,12 @@ tabspaces: 4
 
 font:
   normal:
-    family: Input Mono
+    family: IBM Plex Mono
   bold:
-    family: Input Mono
+    family: IBM Plex Mono
   italic:
-    family: Input Mono
-  size: 7
+    family: IBM Plex Mono
+  size: 8.5
   offset:
     x: 0
     y: 0
