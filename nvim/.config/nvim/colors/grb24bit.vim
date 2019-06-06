@@ -48,14 +48,14 @@ let colors_name = "grb24bit"
 
 " General colors. Forgive me for the way that all of this is formatted.
 exe 'hi Normal          guifg='.s:none          .' guibg='.s:none           .' cterm='.s:none
-exe 'hi NonText         guifg='.s:black         .' guibg='.s:none           .' cterm='.s:none
+exe 'hi NonText         guifg='.s:white         .' guibg='.s:none           .' cterm='.s:none
 
 exe 'hi Cursor          guifg='.s:black         .' guibg='.s:lightwhite     .' cterm='.s:reverse
 exe 'hi LineNr          guifg='.s:lightgray     .' guibg='.s:none           .' cterm='.s:none
 
 exe 'hi VertSplit       guifg='.s:lightgray     .' guibg='.s:lightgray      .' cterm='.s:none
 exe 'hi StatusLine      guifg='.s:black         .' guibg='.s:white          .' cterm='.s:none
-exe 'hi StatusLineNC    guifg='.s:black         .' guibg='.s:lightgray      .' cterm='.s:none  
+exe 'hi StatusLineNC    guifg='.s:black         .' guibg='.s:lightgray      .' cterm='.s:none
 
 exe 'hi Folded          guifg='.s:none          .' guibg='.s:none           .' cterm='.s:none
 exe 'hi Title           guifg='.s:none          .' guibg='.s:none           .' cterm='.s:none
@@ -147,28 +147,28 @@ exe 'hi rubyStringDelimiter         guifg='.s:lightgreen          .' guibg='.s:n
 "rubyRepeatModifier
 "rubyCurlyBlock  { , , }
 
-hi link rubyClass             Keyword 
-hi link rubyModule            Keyword 
-hi link rubyKeyword           Keyword 
+hi link rubyClass             Keyword
+hi link rubyModule            Keyword
+hi link rubyKeyword           Keyword
 hi link rubyOperator          Operator
 hi link rubyIdentifier        Identifier
 hi link rubyInstanceVariable  Identifier
 hi link rubyGlobalVariable    Identifier
 hi link rubyClassVariable     Identifier
-hi link rubyConstant          Type  
+hi link rubyConstant          Type
 
 
 " Special for XML
-hi link xmlTag          Keyword 
-hi link xmlTagName      Conditional 
-hi link xmlEndTag       Identifier 
+hi link xmlTag          Keyword
+hi link xmlTagName      Conditional
+hi link xmlEndTag       Identifier
 
 
 " Special for HTML
-hi link htmlTag         Keyword 
-hi link htmlTagName     Conditional 
-hi link htmlEndTag      Identifier 
+hi link htmlTag         Keyword
+hi link htmlTagName     Conditional
+hi link htmlEndTag      Identifier
 
 
 " Special for Javascript
-hi link javaScriptNumber      Number 
+hi link javaScriptNumber      Number
