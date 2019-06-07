@@ -1,4 +1,6 @@
 {
+  "diagnostic.displayByAle": true,
+  "diagnostic.refreshAfterSave": true,
   "languageserver": {
     "ccls": {
       "command": "ccls",
