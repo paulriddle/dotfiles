@@ -1,7 +1,5 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Shougo/deoplete-clangx'
-Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
@@ -16,6 +14,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
@@ -187,21 +186,19 @@ augroup END
 " Ale
 nmap <silent> <f3> <Plug>(ale_next_wrap)
 nmap <silent> <f4> <Plug>(ale_previous_wrap)
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_save = 1
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
       \ 'ruby': ['rubocop'],
-      \ 'c': ['clangd'],
+      \ 'c': [],
       \ }
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'c': ['clang-format']
       \ }
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#var('clangx', 'clang_binary', '/usr/bin/musl-clang')
-call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
 
 " Lightline
 let g:lightline = {
