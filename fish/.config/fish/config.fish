@@ -1,7 +1,7 @@
 start_agent
 
 if status --is-interactive
-  set PATH $HOME/.local/bin $HOME/.rbenv/bin $HOME/.fzf/bin $HOME/.cargo/bin $PATH
+  set PATH $HOME/.local/bin $HOME/.rbenv/bin $HOME/.cargo/bin $PATH
 
   source (rbenv init - | psub)
 
