@@ -1,7 +1,5 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Shougo/deoplete-clangx'
-Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
@@ -16,6 +14,7 @@ Plug 'junegunn/gv.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
+Plug 'neoclide/coc.nvim', { 'do': './install.sh nightly' }
 Plug 'pangloss/vim-javascript'
 Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
@@ -186,6 +185,8 @@ let g:jsx_ext_required = 0
 nmap <silent> <f3> <Plug>(ale_next_wrap)
 nmap <silent> <f4> <Plug>(ale_previous_wrap)
 nmap <leader>gg <Plug>(ale_go_to_definition)
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
       \ 'ruby': ['rubocop'],
@@ -203,11 +204,6 @@ let g:ale_c_clang_options = '-std=c17 -Wall'
 " There is another python on my system at /bin/python, so I set this variable to
 " avoid confusion
 let g:python3_host_prog = '/usr/bin/python'
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#var('clangx', 'clang_binary', '/usr/bin/musl-clang')
-call deoplete#custom#var('clangx', 'default_c_options', '-std=c17 -Wall')
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<tab>'
