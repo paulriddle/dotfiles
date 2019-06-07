@@ -18,7 +18,7 @@ scrolling:
   # Maximum number of lines in the scrollback buffer.
   history: 10000
   # Number of lines the viewport will move for every line scrolled.
-  multiplier: 30
+  multiplier: 5
   # So that I can scroll within applications like `man`.
   faux_multiplier: 3
   # Don't scroll to the bottom when new text is written to the terminal.
