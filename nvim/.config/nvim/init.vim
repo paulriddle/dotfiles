@@ -88,11 +88,6 @@ tnoremap <c-l> <c-\><c-n><c-w>l
 " Resize splits
 nnoremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<cr>
 
-" Exit terminal mode with esc
-tnoremap <esc> <c-\><c-n>
-" Don't forget about esc though, map it to alt-[
-tnoremap <a-[> <esc>
-
 " Highlight current line
 set cursorline
 " Without it `relativenumber` shows 0 as current line number
