@@ -123,10 +123,5 @@ input "1:1:AT_Translated_Set_2_keyboard" {
     xkb_options grp:alt_shift_toggle,caps:ctrl_modifier
 }
 
-input "2522:64188:COMPANY_USB_Device_Keyboard" {
-    xkb_layout us,ru
-    xkb_options grp:alt_shift_toggle,caps:ctrl_modifier
-}
-
 include /etc/sway/config.d/*
 exec redshift -l 56.8:60.6 -t 5700:3600 -g 0.8
