@@ -6,6 +6,7 @@
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
+	pager = less -x1,5
 [alias]
   b = branch
   c = commit --verbose
