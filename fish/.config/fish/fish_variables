@@ -7,6 +7,7 @@ SETUVAR _fish_abbr_vi3:vi\x20/home/interpreter/\x2econfig/i3/config
 SETUVAR _fish_abbr_vi3bl:vi\x20/home/interpreter/\x2econfig/i3blocks/config
 SETUVAR _fish_abbr_viala:vi\x20/home/interpreter/\x2econfig/alacritty/alacritty\x2eyml
 SETUVAR _fish_abbr_vifish:vi\x20/home/interpreter/\x2econfig/fish/config\x2efish
+SETUVAR _fish_abbr_vigit:vi\x20/home/interpreter/\x2egitconfig
 SETUVAR _fish_abbr_vinit:vi\x20/home/interpreter/\x2econfig/nvim/init\x2evim
 SETUVAR _fish_abbr_visway:vi\x20/home/interpreter/\x2econfig/sway/config
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
