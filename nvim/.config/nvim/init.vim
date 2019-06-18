@@ -96,7 +96,7 @@ set relativenumber
 
 " Required by the colorscheme
 set termguicolors
-colorscheme nofrils-acme
+colorscheme grb24bit
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
