@@ -15,6 +15,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'pboettch/vim-cmake-syntax'
 Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
