@@ -197,11 +197,6 @@ let g:ale_fixers = {
       \ 'c': ['clang-format']
       \ }
 
-" Lightline
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
-
 " Ultisnips
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<c-b>'
