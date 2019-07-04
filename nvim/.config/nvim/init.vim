@@ -212,3 +212,8 @@ xmap <leader>g <Plug>(Limelight)
 " Automatically toggle Limelight when using Goyo
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'seoul256',
+      \ }
