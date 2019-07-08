@@ -82,7 +82,7 @@ exe 'hi MatchParen      guifg='.s:lightwhite    .' guibg='.s:lightgray      .' c
 exe 'hi Pmenu           guifg='.s:black         .' guibg='.s:white          .' cterm='.s:none
 exe 'hi PmenuSel        guifg='.s:black         .' guibg='.s:magenta        .' cterm='.s:none
 
-exe 'hi Search          guifg='.s:none          .' guibg='.s:none           .' cterm='.s:underline    .' ctermfg=NONE ctermbg=NONE'
+exe 'hi Search          guifg='.s:darkgray          .' guibg='.s:lightyellow           .' cterm='.s:bold    .' ctermfg=NONE ctermbg=NONE'
 
 " Syntax highlighting
 exe 'hi Comment         guifg='.s:lightgray     .' guibg='.s:none           .' cterm='.s:none
