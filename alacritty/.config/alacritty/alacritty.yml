@@ -33,12 +33,12 @@ tabspaces: 4
 
 font:
   normal:
-    family: IBM Plex Mono
+    family: Dina
   bold:
-    family: IBM Plex Mono
+    family: Dina
   italic:
-    family: IBM Plex Mono
-  size: 11.0
+    family: Dina
+  size: 6.0
   offset:
     x: 0
     y: 0
