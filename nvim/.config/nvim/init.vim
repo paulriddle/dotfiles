@@ -14,6 +14,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
+Plug 'mattia72/vim-delphi'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'pboettch/vim-cmake-syntax'
 Plug 'robertmeta/nofrils'
@@ -37,6 +38,7 @@ autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType c setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType cpp setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType gitcommit setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType delphi setlocal ts=4 sts=4 sw=4 noexpandtab
 
 set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
