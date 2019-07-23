@@ -3,6 +3,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
+Plug 'chriskempson/base16-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
@@ -97,7 +98,7 @@ set cursorline
 
 " Required by the current colorscheme
 set termguicolors
-colorscheme grb24bit
+colorscheme base16-railscasts
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
