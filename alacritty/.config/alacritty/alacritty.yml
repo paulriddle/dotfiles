@@ -30,12 +30,12 @@ tabspaces: 4
 
 font:
   normal:
-    family: IBM Plex Mono
+    family: Dina
   bold:
-    family: IBM Plex Mono
+    family: Dina
   italic:
-    family: IBM Plex Mono
-  size: 8.0
+    family: Dina
+  size: 6.0
   offset:
     x: 0
     y: 0
@@ -48,36 +48,36 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0x000000'
-    foreground: '0xffffff'
+    background: '0x2b2b2b'
+    foreground: '0xe6e1dc'
   cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
+    text: '0x2b2b2b'
+    cursor: '0xe6e1dc'
   normal:
-    black:   '0x4e4e4e'
-    red:     '0xff6c60'
-    green:   '0xa8ff60'
-    yellow:  '0xffffb6'
-    blue:    '0x96cbfe'
-    magenta: '0xff73fd'
-    cyan:    '0xc6c5fe'
-    white:   '0xeeeeee'
+    black:   '0x2b2b2b'
+    red:     '0xda4939'
+    green:   '0xa5c261'
+    yellow:  '0xffc66d'
+    blue:    '0x6d9cbe'
+    magenta: '0xb6b3eb'
+    cyan:    '0x519f50'
+    white:   '0xe6e1dc'
   bright:
-    black:   '0x7c7c7c'
-    red:     '0xffb6b0'
-    green:   '0xceffab'
-    yellow:  '0xffffcb'
-    blue:    '0xb5dcfe'
-    magenta: '0xff9cfe'
-    cyan:    '0xdfdffe'
-    white:   '0xffffff'
+    black:   '0x5a647e'
+    red:     '0xda4939'
+    green:   '0xa5c261'
+    yellow:  '0xffc66d'
+    blue:    '0x6d9cbe'
+    magenta: '0xb6b3eb'
+    cyan:    '0x519f50'
+    white:   '0xf9f7f3'
   indexed_colors:
-    - { index: 16, color: '0xaf3a03' }
-    - { index: 17, color: '0xd65d0e' }
-    - { index: 18, color: '0xebdbb2' }
-    - { index: 19, color: '0xd5c4a1' }
-    - { index: 20, color: '0x665c54' }
-    - { index: 21, color: '0x3c3836' }
+    - { index: 16, color: '0xcc7833' }
+    - { index: 17, color: '0xbc9458' }
+    - { index: 18, color: '0x272935' }
+    - { index: 19, color: '0x3a4055' }
+    - { index: 20, color: '0xd4cfc9' }
+    - { index: 21, color: '0xf4f1ed' }
 
 # Disable visual bell by setting duration to 0
 visual_bell:
