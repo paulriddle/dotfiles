@@ -7,15 +7,12 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty
-set $menu dmenu_run
-
 # Start a terminal
-bindsym $alt+Return exec $term
+bindsym $alt+Return exec alacritty
 # Kill focused window
 bindsym $win+Shift+q kill
 # Start launcher
-bindsym $alt+d exec $menu
+bindsym $alt+d exec dmenu_run
 # Drag floating windows by holding down $alt and left mouse button.
 # Resize them with right mouse button + $alt.
 # Despite the name, also works for non-floating windows.
