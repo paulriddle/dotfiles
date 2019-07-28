@@ -8,5 +8,7 @@
       "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
       "filetypes": ["c", "cpp", "objc", "objcpp"]
     }
-  }
+  },
+  "latex.forwardSearch.executable": "zathura",
+  "latex.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"]
 }

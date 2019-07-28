@@ -137,6 +137,7 @@ let g:vimtex_compiler_progname = 'nvr'
 " Sometimes tex files detected as plaintext, this option prevents it
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_complete_enabled = 0
 
 " Golang
 let g:go_highlight_build_constraints = 1
