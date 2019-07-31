@@ -3,6 +3,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
+Plug 'chriskempson/base16-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
@@ -14,9 +15,9 @@ Plug 'junegunn/gv.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
+Plug 'mattia72/vim-delphi'
 Plug 'neoclide/coc.nvim', { 'do': './install.sh nightly' }
 Plug 'pangloss/vim-javascript'
-Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-abolish'
@@ -40,6 +41,8 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType c setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType cpp setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType gitcommit setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType delphi setlocal ts=4 sts=4 sw=4 noexpandtab
 
 set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
@@ -91,13 +94,10 @@ nnoremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<cr>
 
 " Highlight current line
 set cursorline
-" Without it `relativenumber` shows 0 as current line number
-set number
-set relativenumber
 
 " Required by the colorscheme
 set termguicolors
-colorscheme grb24bit
+colorscheme base16-railscasts
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -116,7 +116,7 @@ inoremap jk <esc>
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'seoul256',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
