@@ -121,4 +121,5 @@ input "1:1:AT_Translated_Set_2_keyboard" {
 }
 
 include /etc/sway/config.d/*
+exec source (rbenv init - | psub)
 exec redshift -l 56.8:60.6 -t 5700:3600 -g 0.8

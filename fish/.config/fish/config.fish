@@ -1,10 +1,6 @@
 start_agent
 
 if status --is-interactive
-  set PATH $HOME/.local/bin $HOME/.rbenv/bin $HOME/.cargo/bin $PATH
-
-  source (rbenv init - | psub)
-
   set -x FZF_DEFAULT_COMMAND 'rg --files --ignore-case'
   set -x FZF_CTRL_T_COMMAND 'rg --files --ignore-case'
   set -x FZF_DEFAULT_OPTS '--height 30%'
