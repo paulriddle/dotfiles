@@ -98,7 +98,7 @@ set cursorline
 
 " Required by the current colorscheme
 set termguicolors
-colorscheme base16-railscasts
+colorscheme base16-github
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -217,5 +217,5 @@ autocmd! User GoyoLeave Limelight!
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
+      \ 'colorscheme': 'PaperColor_light',
       \ }
