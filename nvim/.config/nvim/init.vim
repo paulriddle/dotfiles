@@ -3,7 +3,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
-Plug 'chriskempson/base16-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
@@ -18,7 +17,6 @@ Plug 'lervag/vimtex'
 Plug 'mattia72/vim-delphi'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'pboettch/vim-cmake-syntax'
-Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -67,6 +65,10 @@ let mapleader=","
 nnoremap \ ,
 let maplocalleader="_"
 
+" Tabular
+nnoremap <leader>t: :Tabular /:<cr>
+nnoremap <leader>t=> :Tabular /=><cr>
+
 " Do not highlight matching parens, it's annoying and showmatch is sufficient
 let loaded_matchparen = 1
 
@@ -98,7 +100,8 @@ set cursorline
 
 " Required by the current colorscheme
 set termguicolors
-colorscheme base16-github
+let base16colorspace=256
+colorscheme plan9
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -217,5 +220,12 @@ autocmd! User GoyoLeave Limelight!
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor_light',
+      \ 'colorscheme': 'solarized',
+      \ 'component_function': {
+      \   'filename': 'FilenameForLightline'
       \ }
+      \ }
+" Show full path of filename
+function! FilenameForLightline()
+  return expand('%')
+endfunction
