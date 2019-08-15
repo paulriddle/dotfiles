@@ -119,7 +119,7 @@ inoremap jk <esc>
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
+      \ 'colorscheme': 'solarized',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
