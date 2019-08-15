@@ -135,4 +135,5 @@ input "6700:8484:SEM_USB_Keyboard" {
     xkb_options grp:alt_shift_toggle,ctrl:nocaps
 }
 
+exec redshift -l 56.8:60.6 -t 5700:3600 -g 0.8 -m wayland
 include /etc/sway/config.d/*
