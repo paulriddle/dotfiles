@@ -201,6 +201,7 @@ let g:ale_fixers = {
       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'c': ['clang-format']
       \ }
+let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
 
 " Ultisnips
 let g:UltiSnipsExpandTrigger = '<tab>'
