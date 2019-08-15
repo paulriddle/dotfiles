@@ -101,7 +101,7 @@ set cursorline
 
 " Required by the colorscheme
 set termguicolors
-colorscheme base16-railscasts
+colorscheme plan9
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>

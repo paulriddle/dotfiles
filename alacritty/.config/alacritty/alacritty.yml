@@ -30,12 +30,12 @@ tabspaces: 4
 
 font:
   normal:
-    family: Dina
+    family: IBM Plex Mono
   bold:
-    family: Dina
+    family: IBM Plex Mono
   italic:
-    family: Dina
-  size: 6.0
+    family: IBM Plex Mono
+  size: 8.0
   offset:
     x: 0
     y: 0
@@ -43,40 +43,33 @@ font:
     x: 0
     y: 0
 
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 colors:
   primary:
-    background: '0x2b2b2b'
-    foreground: '0xe6e1dc'
+    background: '0xffffeb'
+    foreground: '0x000000'
   cursor:
     text: '0x2b2b2b'
-    cursor: '0xe6e1dc'
+    cursor: '0xa6a28c'
   normal:
-    black:   '0x2b2b2b'
-    red:     '0xda4939'
-    green:   '0xa5c261'
-    yellow:  '0xffc66d'
-    blue:    '0x6d9cbe'
-    magenta: '0xb6b3eb'
-    cyan:    '0x519f50'
-    white:   '0xe6e1dc'
+    black:   '0x000000'
+    red:     '0xad4f4f'
+    green:   '0x468747'
+    yellow:  '0x8f7734'
+    blue:    '0x268bd2'
+    magenta: '0x888aca'
+    cyan:    '0x6aa7a8'
+    white:   '0xf3f3d3'
   bright:
-    black:   '0x5a647e'
-    red:     '0xda4939'
-    green:   '0xa5c261'
-    yellow:  '0xffc66d'
-    blue:    '0x6d9cbe'
-    magenta: '0xb6b3eb'
-    cyan:    '0x519f50'
-    white:   '0xf9f7f3'
-  indexed_colors:
-    - { index: 16, color: '0xcc7833' }
-    - { index: 17, color: '0xbc9458' }
-    - { index: 18, color: '0x272935' }
-    - { index: 19, color: '0x3a4055' }
-    - { index: 20, color: '0xd4cfc9' }
-    - { index: 21, color: '0xf4f1ed' }
+    black:   '0x878781'
+    red:     '0xffdddd'
+    green:   '0xebffeb'
+    yellow:  '0xedeea5'
+    blue:    '0xebffff'
+    magenta: '0x96d197'
+    cyan:    '0xa1eeed'
+    white:   '0xffffeb'
 
 # Disable visual bell by setting duration to 0
 visual_bell:
