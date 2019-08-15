@@ -8,7 +8,7 @@
       "rootPatterns": [
         "compile_flags.txt",
         "compile_commands.json",
-        "builddir/compile_commands.json",
+        "./builddir/compile_commands.json",
         ".vim/",
         ".git/",
         ".hg/"
