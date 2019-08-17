@@ -5,14 +5,7 @@
     "clangd": {
       "command": "clangd",
       "args": ["--background-index"],
-      "rootPatterns": [
-        "compile_flags.txt",
-        "compile_commands.json",
-        "./builddir/compile_commands.json",
-        ".vim/",
-        ".git/",
-        ".hg/"
-      ],
+      "rootPatterns": ["meson.build"],
       "filetypes": ["c", "cpp", "objc", "objcpp"]
     }
   },
