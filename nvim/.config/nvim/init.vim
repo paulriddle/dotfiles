@@ -6,6 +6,7 @@ Plug 'cespare/vim-toml'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
+Plug 'igankevich/mesonic'
 Plug 'itchyny/lightline.vim'
 Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
