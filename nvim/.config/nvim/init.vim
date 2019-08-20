@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'easymotion/vim-easymotion'
@@ -11,8 +10,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
 Plug 'mattia72/vim-delphi'
@@ -216,22 +213,6 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" Ultisnips
-let g:UltiSnipsExpandTrigger = '<c-q>'
-let g:UltiSnipsJumpForwardTrigger = '<c-b>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
-
-" Goyo and Limelight
-nnoremap <leader>w :Goyo<cr>
-" Turn off Limelight
-nnoremap <leader>g :Limelight!<cr>
-" Activate Limelight on visual selection
-xmap <leader>g <Plug>(Limelight)
-" Automatically toggle Limelight when using Goyo
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
 
 " Lightline
 let g:lightline = {
