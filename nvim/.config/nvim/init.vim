@@ -205,7 +205,20 @@ let g:ale_c_clang_options = '-std=c17 -Wall'
 " avoid confusion
 let g:python3_host_prog = '/usr/bin/python'
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger = '<tab>'
+" coc.nvim
+" Tab to trigger completion
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger = '<c-q>'
 let g:UltiSnipsJumpForwardTrigger = '<c-b>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
