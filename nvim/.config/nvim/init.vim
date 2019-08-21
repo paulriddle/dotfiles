@@ -187,9 +187,10 @@ nmap <leader>gg <Plug>(ale_go_to_definition)
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
 let g:ale_linters_explicit = 1
+let g:ale_disable_lsp = 1
 let g:ale_linters = {
       \ 'ruby': ['rubocop'],
-      \ 'c': ['clangd'],
+      \ 'c': [],
       \ }
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
@@ -198,7 +199,6 @@ let g:ale_fixers = {
       \ }
 
 let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
-let g:ale_c_clang_options = '-std=c17 -Wall'
 
 " There is another python on my system at /bin/python, so I set this variable to
 " avoid confusion
