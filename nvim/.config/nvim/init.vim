@@ -95,6 +95,9 @@ nnoremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<cr>
 
 " Highlight current line
 set cursorline
+" Without it `relativenumber` shows 0 as current line number
+set number
+set relativenumber
 
 " Required by the current colorscheme
 set termguicolors
