@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
+Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
@@ -21,7 +22,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-ruby/vim-ruby'
-Plug 'w0rp/ale'
 call plug#end()
 
 " Tab settings
