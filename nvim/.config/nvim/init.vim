@@ -14,6 +14,7 @@ Plug 'junegunn/gv.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
+Plug 'lervag/wiki-ft.vim'
 Plug 'lervag/wiki.vim'
 Plug 'mattia72/vim-delphi'
 Plug 'neoclide/coc.nvim', { 'do': './install.sh nightly' }
@@ -220,3 +221,6 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+" wiki.vim
+let g:wiki_root = '~/notes'
