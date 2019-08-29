@@ -14,6 +14,7 @@ Plug 'junegunn/gv.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'kballard/vim-fish'
 Plug 'lervag/vimtex'
+Plug 'lervag/wiki.vim'
 Plug 'mattia72/vim-delphi'
 Plug 'neoclide/coc.nvim', { 'do': './install.sh nightly' }
 Plug 'pangloss/vim-javascript'
