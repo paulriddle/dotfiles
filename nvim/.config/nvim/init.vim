@@ -13,6 +13,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex'
+Plug 'lervag/wiki-ft.vim'
+Plug 'lervag/wiki.vim'
 Plug 'mattia72/vim-delphi'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'pboettch/vim-cmake-syntax'
@@ -231,3 +233,6 @@ let g:lightline = {
 function! FilenameForLightline()
   return expand('%')
 endfunction
+
+" wiki.vim
+let g:wiki_root = '~/notes'
