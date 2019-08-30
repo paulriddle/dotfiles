@@ -3,6 +3,7 @@
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR _fish_abbr_fi:nvim\x20\x28fzf\x29
 SETUVAR _fish_abbr_vi3:vi\x20/home/interpreter/\x2econfig/i3/config
 SETUVAR _fish_abbr_vi3bl:vi\x20/home/interpreter/\x2econfig/i3blocks/config
 SETUVAR _fish_abbr_viala:vi\x20/home/interpreter/\x2econfig/alacritty/alacritty\x2eyml
