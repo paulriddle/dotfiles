@@ -13,3 +13,4 @@ set -x NVIM_LISTEN_ADDRESS /tmp/nvimsocket
 # set -x XKB_DEFAULT_OPTIONS grp:alt_shift_toggle,caps:ctrl_modifier
 set -x EDITOR nvim
 set -x DOCKER_TLD localhost
+set -x _JAVA_AWT_WM_NONREPARENTING 1
