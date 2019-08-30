@@ -1,4 +1,4 @@
-# jod4 is cmd. Mouse+Mod4 to drag floating windows.
+# Mouse+$win to drag floating windows.
 floating_modifier Mod4
 output HDMI-A-3 pos 0 0 res 1920x1080
 output HDMI-A-1 pos 1920 0 res 1920x1080
@@ -12,8 +12,7 @@ workspace 7 output HDMI-A-1
 workspace 8 output HDMI-A-1
 workspace 9 output HDMI-A-1
 workspace 10 output HDMI-A-1
-# This comment makes ft=conf
-set $win Mod4
+get $win Mod4
 set $alt Mod1
 
 set $left h
