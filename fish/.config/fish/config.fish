@@ -7,3 +7,4 @@ set -x NVIM_LISTEN_ADDRESS /tmp/nvimsocket
 set -x EDITOR nvim
 set -x NNN_USE_EDITOR 1
 set -x DOCKER_TLD localhost
+set -x _JAVA_AWT_WM_NONREPARENTING 1
