@@ -65,6 +65,9 @@ let mapleader=","
 nnoremap \ ,
 let maplocalleader="_"
 
+" Abbreviations
+iabbrev --- -------------------------------------------------------------------------------
+
 " Tabular
 nnoremap <leader>t: :Tabular /:<cr>
 nnoremap <leader>t=> :Tabular /=><cr>
