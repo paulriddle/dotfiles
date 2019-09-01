@@ -115,6 +115,7 @@ nnoremap <leader>l :set list!<cr>
 nnoremap <leader><space> :nohlsearch<cr>
 
 nnoremap <leader>ev :edit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <space> za
 
 " Make j and k not ignore wrapped parts of lines
