@@ -68,10 +68,6 @@ let maplocalleader="_"
 " Abbreviations
 iabbrev --- -------------------------------------------------------------------------------
 
-" Tabular
-nnoremap <leader>t: :Tabular /:<cr>
-nnoremap <leader>t=> :Tabular /=><cr>
-
 " Do not highlight matching parens, it's annoying and showmatch is sufficient
 let loaded_matchparen = 1
 
