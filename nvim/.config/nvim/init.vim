@@ -71,10 +71,6 @@ let mapleader=","
 nnoremap \ ,
 let maplocalleader="_"
 
-" Tabular
-nnoremap <leader>t: :Tabularize /:<cr>
-nnoremap <leader>t=> :Tabularize /=><cr>
-
 " Do not highlight matching parens, it's annoying and showmatch is sufficient
 let loaded_matchparen = 1
 
