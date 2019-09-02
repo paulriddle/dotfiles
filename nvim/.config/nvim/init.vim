@@ -71,6 +71,9 @@ let mapleader=","
 nnoremap \ ,
 let maplocalleader="_"
 
+" Abbreviations
+iabbrev --- -------------------------------------------------------------------------------
+
 " Do not highlight matching parens, it's annoying and showmatch is sufficient
 let loaded_matchparen = 1
 
