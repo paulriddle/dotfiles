@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
+Plug 'chriskempson/base16-vim'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
@@ -103,7 +104,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme plan9
+colorscheme base16-woodland
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -224,7 +225,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'srcery_drk',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
