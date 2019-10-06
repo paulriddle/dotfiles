@@ -13,7 +13,7 @@ SETUVAR _fish_abbr_vinit:vi\x20/home/interpreter/\x2econfig/nvim/init\x2evim
 SETUVAR _fish_abbr_visway:vi\x20/home/interpreter/\x2econfig/sway/config
 SETUVAR fish_color_autosuggestion:6c6c6c
 SETUVAR fish_color_cancel:normal
-SETUVAR fish_color_command:ffd7d7
+SETUVAR fish_color_command:dadada
 SETUVAR fish_color_comment:A63100
 SETUVAR fish_color_cwd:008000
 SETUVAR fish_color_cwd_root:800000
@@ -25,7 +25,7 @@ SETUVAR fish_color_host:normal
 SETUVAR fish_color_match:normal
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
-SETUVAR fish_color_param:d7afaf
+SETUVAR fish_color_param:dadada
 SETUVAR fish_color_quote:BF9C30
 SETUVAR fish_color_redirection:BF5B30
 SETUVAR fish_color_search_match:ffff00
