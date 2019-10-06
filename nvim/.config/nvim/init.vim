@@ -225,7 +225,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'srcery_drk',
+      \ 'colorscheme': 'jellybeans',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
