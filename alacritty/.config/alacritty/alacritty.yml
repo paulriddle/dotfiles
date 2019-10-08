@@ -47,29 +47,36 @@ draw_bold_text_with_bright_colors: false
 
 colors:
   primary:
-    background: '0xffffeb'
-    foreground: '0x000000'
+    background: '0x181818'
+    foreground: '0xd8d8d8'
   cursor:
-    text: '0x2b2b2b'
-    cursor: '0xa6a28c'
+    text: '0x181818'
+    cursor: '0xd8d8d8'
   normal:
-    black:   '0x000000'
-    red:     '0xad4f4f'
-    green:   '0x468747'
-    yellow:  '0x8f7734'
-    blue:    '0x268bd2'
-    magenta: '0x888aca'
-    cyan:    '0x6aa7a8'
-    white:   '0xf3f3d3'
+    black:   '0x181818'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xd8d8d8'
   bright:
-    black:   '0x878781'
-    red:     '0xffdddd'
-    green:   '0xebffeb'
-    yellow:  '0xedeea5'
-    blue:    '0xebffff'
-    magenta: '0x96d197'
-    cyan:    '0xa1eeed'
-    white:   '0xffffeb'
+    black:   '0x585858'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xf8f8f8'
+  indexed_colors:
+    - { index: 16, color: '0xdc9656' }
+    - { index: 17, color: '0xa16946' }
+    - { index: 18, color: '0x282828' }
+    - { index: 19, color: '0x383838' }
+    - { index: 20, color: '0xb8b8b8' }
+    - { index: 21, color: '0xe8e8e8' }
 
 # Disable visual bell by setting duration to 0
 visual_bell:

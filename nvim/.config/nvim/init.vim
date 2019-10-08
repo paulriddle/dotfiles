@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
+Plug 'chriskempson/base16-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
@@ -104,7 +105,7 @@ set relativenumber
 
 " Required by the colorscheme
 set termguicolors
-colorscheme plan9
+colorscheme base16-default-dark
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
