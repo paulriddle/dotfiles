@@ -5,7 +5,7 @@ Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 Plug 'igankevich/mesonic'
 Plug 'itchyny/lightline.vim'
@@ -13,18 +13,18 @@ Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'lervag/wiki-ft.vim'
 Plug 'lervag/wiki.vim'
-Plug 'mattia72/vim-delphi'
+Plug 'mattia72/vim-delphi', { 'for': 'pascal' }
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'pboettch/vim-cmake-syntax'
-Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 call plug#end()
 
 " Tab settings
