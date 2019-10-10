@@ -82,7 +82,7 @@ bindsym $win+Shift+minus move scratchpad
 # there are multiple scratchpad windows, this command cycles through them.
 bindsym $win+minus scratchpad show
 # Disable window borders
-default_border none
+default_border pixel
 focus_follows_mouse no
 
 # Resizing containers
