@@ -2,6 +2,8 @@
 
 while true
 do
-  cat /sys/class/power_supply/BAT0/capacity
+  time=$(date +"%A %Y-%m-%d %I:%M %p")
+  bat=$(cat /sys/class/power_supply/BAT0/capacity)
+  printf "%s | Bat %s%%" "${time}" "${bat}"
   sleep 120
 done
