@@ -6,6 +6,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
+Plug 'hiphish/info.vim'
 Plug 'igankevich/mesonic'
 Plug 'itchyny/lightline.vim'
 Plug 'jez/vim-superman'
@@ -125,7 +126,7 @@ inoremap jk <esc>
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'srcery_drk',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
