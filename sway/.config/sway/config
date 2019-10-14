@@ -113,6 +113,7 @@ mode "resize" {
 }
 
 bar {
+    status_command custom_statusbar
     colors {
         statusline #ffffff
         background #323232

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while true
+do
+  time=$(date +"%A %Y-%m-%d %I:%M %p")
+  printf "%s" "${time}"
+  sleep 120
+done
