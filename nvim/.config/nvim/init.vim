@@ -36,20 +36,20 @@ call plug#end()
 
 " Tab settings
 set expandtab
-set tabstop=2 "     ts
+set tabstop=2     " ts
 set softtabstop=2 " sts
-set shiftwidth=2 "  sw
-autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
-autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
-autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
-autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
-autocmd FileType gitcommit setlocal ts=4 sts=4 sw=4 noexpandtab
-autocmd FileType delphi setlocal ts=4 sts=4 sw=4 noexpandtab
+set shiftwidth=2  " sw
+autocmd FileType go         setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
+autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab
+autocmd FileType c          setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType gitcommit  setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
 
 set textwidth=80
-autocmd FileType ruby setlocal textwidth=120
-autocmd FileType eruby setlocal textwidth=120
+autocmd FileType ruby       setlocal textwidth=120
+autocmd FileType eruby      setlocal textwidth=120
 autocmd FileType eruby.yaml setlocal textwidth=120
 
 set smartindent
