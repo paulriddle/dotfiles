@@ -14,7 +14,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'lervag/vimtex', { 'for': 'tex' }
-Plug 'lervag/wiki-ft.vim'
+Plug 'lervag/wiki-ft.vim', { 'for': 'wiki' }
 Plug 'lervag/wiki.vim'
 Plug 'mattia72/vim-delphi', { 'for': 'pascal' }
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
