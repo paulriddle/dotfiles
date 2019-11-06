@@ -20,6 +20,7 @@ Plug 'lervag/wiki-ft.vim'
 Plug 'lervag/wiki.vim'
 Plug 'mattia72/vim-delphi', { 'for': 'pascal' }
 Plug 'neoclide/coc.nvim', { 'do': './install.sh nightly' }
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
@@ -226,3 +227,6 @@ endfunction
 
 " wiki.vim
 let g:wiki_root = '~/notes'
+
+" nvim-colorizer.lua
+lua require'colorizer'.setup()
