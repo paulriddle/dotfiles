@@ -3,6 +3,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
+Plug 'robertmeta/nofrils'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'for': 'go' }
@@ -104,7 +105,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme base16-woodland
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
