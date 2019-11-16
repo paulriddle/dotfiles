@@ -3,7 +3,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
-Plug 'robertmeta/nofrils'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'for': 'go' }
@@ -19,7 +18,9 @@ Plug 'lervag/wiki-ft.vim', { 'for': 'wiki' }
 Plug 'lervag/wiki.vim'
 Plug 'mattia72/vim-delphi', { 'for': 'pascal' }
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'pboettch/vim-cmake-syntax'
+Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -226,7 +227,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'PaperColor_light',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
@@ -238,3 +239,6 @@ endfunction
 
 " wiki.vim
 let g:wiki_root = '~/notes'
+
+" nvim-colorizer
+lua require 'colorizer'.setup({'yaml';'vim';})

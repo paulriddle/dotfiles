@@ -50,36 +50,36 @@ draw_bold_text_with_bright_colors: false
 
 colors:
   primary:
-    background: '0xfdf6e3'
-    foreground: '0x586e75'
+    background: '0xffffd7' #ffffd7
+    foreground: '0x586e75' #586e75
   cursor:
-    text: '0xfdf6e3'
-    cursor: '0x586e75'
+    text:    '0xfdf6e3'    #fdf6e3
+    cursor:  '0x586e75'    #586e75
   normal:
-    black:   '0xfdf6e3'
-    red:     '0xdc322f'
-    green:   '0x859900'
-    yellow:  '0xb58900'
-    blue:    '0x268bd2'
-    magenta: '0x6c71c4'
-    cyan:    '0x2aa198'
-    white:   '0x586e75'
+    black:   '0xfdf6e3'    #fdf6e3
+    red:     '0xdc322f'    #dc322f
+    green:   '0x859900'    #859900
+    yellow:  '0xb58900'    #b58900
+    blue:    '0x268bd2'    #268bd2
+    magenta: '0x6c71c4'    #6c71c4
+    cyan:    '0x2aa198'    #2aa198
+    white:   '0x586e75'    #586e75
   bright:
-    black:   '0x839496'
-    red:     '0xdc322f'
-    green:   '0x859900'
-    yellow:  '0xb58900'
-    blue:    '0x268bd2'
-    magenta: '0x6c71c4'
-    cyan:    '0x2aa198'
-    white:   '0x002b36'
+    black:   '0x839496'    #839496
+    red:     '0xdc322f'    #dc322f
+    green:   '0x859900'    #859900
+    yellow:  '0xb58900'    #b58900
+    blue:    '0x268bd2'    #268bd2
+    magenta: '0x6c71c4'    #6c71c4
+    cyan:    '0x2aa198'    #2aa198
+    white:   '0x002b36'    #002b36
   indexed_colors:
-    - { index: 16, color: '0xcb4b16' }
-    - { index: 17, color: '0xd33682' }
-    - { index: 18, color: '0xeee8d5' }
-    - { index: 19, color: '0x93a1a1' }
-    - { index: 20, color: '0x657b83' }
-    - { index: 21, color: '0x073642' }
+    - { index: 16, color: '0xcb4b16' } #cb4b16
+    - { index: 17, color: '0xd33682' } #d33682
+    - { index: 18, color: '0xeee8d5' } #eee8d5
+    - { index: 19, color: '0x93a1a1' } #93a1a1
+    - { index: 20, color: '0x657b83' } #657b83
+    - { index: 21, color: '0x073642' } #073642
 
 # Disable visual bell by setting duration to 0
 visual_bell:
