@@ -22,6 +22,7 @@ Plug 'mattia72/vim-delphi', { 'for': 'pascal' }
 Plug 'neoclide/coc.nvim', { 'do': './install.sh nightly' }
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
 Plug 'tpope/vim-abolish'
@@ -107,7 +108,7 @@ set relativenumber
 
 " Required by the colorscheme
 set termguicolors
-colorscheme base16-default-dark
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -228,5 +229,5 @@ endfunction
 " wiki.vim
 let g:wiki_root = '~/notes'
 
-" nvim-colorizer.lua
-lua require'colorizer'.setup()
+" nvim-colorizer
+lua require 'colorizer'.setup({'yaml';'vim';})
