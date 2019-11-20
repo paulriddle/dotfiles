@@ -128,7 +128,7 @@ inoremap jk <esc>
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'srcery_drk',
+      \ 'colorscheme': 'PaperColor_light',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
