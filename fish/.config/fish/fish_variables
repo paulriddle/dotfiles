@@ -39,5 +39,5 @@ SETUVAR fish_pager_color_completion:green
 SETUVAR fish_pager_color_description:B3A06D
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/interpreter/\x2econfig/nvm/12\x2e7\x2e0/bin\x1e/home/interpreter/\x2erbenv/bin\x1e/home/interpreter/\x2efzf/bin\x1e/home/interpreter/go/bin\x1e/home/interpreter/\x2elocal/bin\x1e/home/interpreter/\x2ecargo/bin\x1e/home/interpreter/\x2eyarn/bin\x1e/home/interpreter/\x2erbenv/shims/\x1e\x2e/bin
+SETUVAR fish_user_paths:/home/interpreter/\x2econfig/nvm/12\x2e7\x2e0/bin\x1e/home/interpreter/\x2erbenv/bin\x1e/home/interpreter/\x2efzf/bin\x1e/home/interpreter/go/bin\x1e/home/interpreter/\x2elocal/bin\x1e/home/interpreter/\x2ecargo/bin\x1e/home/interpreter/\x2eyarn/bin\x1e/home/interpreter/\x2erbenv/shims/\x1e\x2e/bin\x1e/home/interpreter/bin/
 SETUVAR pure_version:2\x2e1\x2e5
