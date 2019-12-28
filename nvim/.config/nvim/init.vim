@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Shirk/vim-gas'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
@@ -106,7 +107,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme nofrils-acme
+colorscheme atmosphere
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -115,6 +116,7 @@ nnoremap <leader><space> :nohlsearch<cr>
 
 nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ec :edit $HOME/.config/nvim/colors/atmosphere.vim<cr>
 nnoremap <space> za
 
 " Make j and k not ignore wrapped parts of lines
