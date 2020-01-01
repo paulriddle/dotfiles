@@ -26,39 +26,36 @@ font:
 
 colors:
   primary:
-    background:        '0x232627'  # #232627
-    foreground:        '0xfcfcfc'  # #fcfcfc
-    dim_foreground:    '0xeff0f1'  # #eff0f1
-    bright_foreground: '0xffffff'  # #ffffff
-    dim_background:    '0x31363b'  # #31363b
-    bright_background: '0x000000'  # #000000
+    background: '0x32302f'  # #32302f
+    foreground: '0xd5c4a1'  # #d5c4a1
+  cursor:
+    text:       '0x32302f'  # #32302f
+    cursor:     '0xd5c4a1'  # #d5c4a1
   normal:
-    black:   '0x232627'  # #232627
-    red:     '0xed1515'  # #ed1515
-    green:   '0x11d116'  # #11d116
-    yellow:  '0xf67400'  # #f67400
-    blue:    '0x1d99f3'  # #1d99f3
-    magenta: '0x9b59b6'  # #9b59b6
-    cyan:    '0x1abc9c'  # #1abc9c
-    white:   '0xfcfcfc'  # #fcfcfc
+    black:      '0x32302f'  # #32302f
+    red:        '0xfb4934'  # #fb4934
+    green:      '0xb8bb26'  # #b8bb26
+    yellow:     '0xfabd2f'  # #fabd2f
+    blue:       '0x83a598'  # #83a598
+    magenta:    '0xd3869b'  # #d3869b
+    cyan:       '0x8ec07c'  # #8ec07c
+    white:      '0xd5c4a1'  # #d5c4a1
   bright:
-    black:   '0x7f8c8d'  # #7f8c8d
-    red:     '0xc0392b'  # #c0392b
-    green:   '0x1cdc9a'  # #1cdc9a
-    yellow:  '0xfdbc4b'  # #fdbc4b
-    blue:    '0x3daee9'  # #3daee9
-    magenta: '0x8e44ad'  # #8e44ad
-    cyan:    '0x16a085'  # #16a085
-    white:   '0xffffff'  # #ffffff
-  dim:
-    black:   '0x31363b'  # #31363b
-    red:     '0x783228'  # #783228
-    green:   '0x17a262'  # #17a262
-    yellow:  '0xb65619'  # #b65619
-    blue:    '0x1b668f'  # #1b668f
-    magenta: '0x614a73'  # #614a73
-    cyan:    '0x186c60'  # #186c60
-    white:   '0x63686d'  # #63686d
+    black:      '0x665c54'  # #665c54
+    red:        '0xfb4934'  # #fb4934
+    green:      '0xb8bb26'  # #b8bb26
+    yellow:     '0xfabd2f'  # #fabd2f
+    blue:       '0x83a598'  # #83a598
+    magenta:    '0xd3869b'  # #d3869b
+    cyan:       '0x8ec07c'  # #8ec07c
+    white:      '0xfbf1c7'  # #fbf1c7
+  indexed_colors:
+    - { index: 16, color: '0xfe8019' }  # #fe8019
+    - { index: 17, color: '0xd65d0e' }  # #d65d0e
+    - { index: 18, color: '0x3c3836' }  # #3c3836
+    - { index: 19, color: '0x504945' }  # #504945
+    - { index: 20, color: '0xbdae93' }  # #bdae93
+    - { index: 21, color: '0xebdbb2' }  # #ebdbb2
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
