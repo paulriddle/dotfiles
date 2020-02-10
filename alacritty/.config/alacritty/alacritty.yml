@@ -26,16 +26,16 @@ font:
 
 colors:
   primary:
-    background: '#32302f'
-    foreground: '#d5c4a1'
+    background: '#ffdfaf'
+    foreground: '#000000'
   cursor:
-    text:    '#32302f'
-    cursor:  '#d5c4a1'
+    text:    '#ffdfff'
+    cursor:  '#585858'
   normal:
     black:   '#32302f'
     red:     '#fb4934'
-    green:   '#b8bb26'
-    yellow:  '#fabd2f'
+    green:   '#c00a98'
+    yellow:  '#00bd2f'
     blue:    '#83a598'
     magenta: '#d3869b'
     cyan:    '#8ec07c'

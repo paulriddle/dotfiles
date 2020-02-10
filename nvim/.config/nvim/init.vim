@@ -107,7 +107,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme base16-gruvbox-dark-soft
+colorscheme nofrils-sepia
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -229,7 +229,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'PaperColor_light',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
