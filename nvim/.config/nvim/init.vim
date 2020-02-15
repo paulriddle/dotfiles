@@ -195,6 +195,7 @@ augroup END
 " Ale
 nmap <silent> <f3> <Plug>(ale_next_wrap)
 nmap <silent> <f4> <Plug>(ale_previous_wrap)
+nmap <leader>a <Plug>(ale_fix)
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_save = 1
@@ -204,7 +205,6 @@ let g:ale_linters = {
       \ 'ruby': [],
       \ 'c': [],
       \ }
-let g:ale_fix_on_save = 1
 let g:ale_fixers = {
       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'c': ['clang-format']
