@@ -5,7 +5,7 @@
     "clangd": {
       "command": "clangd",
       "args": ["--background-index"],
-      "rootPatterns": ["meson.build"],
+      "rootPatterns": ["meson.build", "Makefile"],
       "filetypes": ["c", "cpp", "objc", "objcpp"]
     }
   },
