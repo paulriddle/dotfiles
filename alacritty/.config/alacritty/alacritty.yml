@@ -8,12 +8,6 @@ window:
 scrolling:
   history: 10000
   multiplier: 15
-  # Do not scroll to the bottom when new text is written to the terminal
-  auto_scroll: false
-
-# Width of a tab in cells. To prevent unexpected behavior it's also required to
-# change the `it` value in terminfo when altering this setting.
-tabspaces: 4
 
 font:
   normal:
