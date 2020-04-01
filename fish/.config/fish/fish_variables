@@ -3,6 +3,7 @@
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_fi:nvim\x20\x28fzf\x29
 SETUVAR _fish_abbr_vi3:vi\x20/home/interpreter/\x2econfig/i3/config
 SETUVAR _fish_abbr_vi3bl:vi\x20/home/interpreter/\x2econfig/i3blocks/config
@@ -22,6 +23,7 @@ SETUVAR fish_color_error:9177E5
 SETUVAR fish_color_escape:00a6b2
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
@@ -39,5 +41,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/interpreter/\x2econfig/nvm/12\x2e7\x2e0/bin\x1e/home/interpreter/\x2erbenv/bin\x1e/home/interpreter/\x2efzf/bin\x1e/home/interpreter/go/bin\x1e/home/interpreter/\x2elocal/bin\x1e/home/interpreter/\x2ecargo/bin\x1e/home/interpreter/\x2eyarn/bin\x1e/home/interpreter/\x2erbenv/shims/\x1e\x2e/bin\x1e/home/interpreter/bin/
+SETUVAR fish_user_paths:/home/interpreter/\x2econfig/nvm/12\x2e7\x2e0/bin\x1e/home/interpreter/\x2erbenv/bin\x1e/home/interpreter/\x2efzf/bin\x1e/home/interpreter/go/bin\x1e/home/interpreter/\x2elocal/bin\x1e/home/interpreter/\x2ecargo/bin\x1e/home/interpreter/\x2eyarn/bin\x1e/home/interpreter/\x2erbenv/shims/\x1e\x2e/bin\x1e/home/interpreter/bin/\x1e/usr/share/bcc/tools
 SETUVAR pure_version:2\x2e1\x2e5
