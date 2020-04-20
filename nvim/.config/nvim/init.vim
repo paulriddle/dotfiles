@@ -107,7 +107,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme nofrils-sepia
+colorscheme nofrils-dark
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -230,7 +230,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor_light',
+      \ 'colorscheme': 'darcula',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
