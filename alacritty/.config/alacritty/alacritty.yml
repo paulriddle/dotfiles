@@ -5,10 +5,6 @@ window:
   # Spread additional padding evenly around the terminal content
   dynamic_padding: true
 
-scrolling:
-  history: 10000
-  multiplier: 15
-
 font:
   normal:
     family: IBM Plex Mono
