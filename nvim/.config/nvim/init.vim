@@ -230,7 +230,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'darcula',
+      \ 'colorscheme': 'OldHope',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
