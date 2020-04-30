@@ -43,7 +43,6 @@ autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType gitcommit  setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
 
-set textwidth=80
 autocmd FileType ruby setlocal textwidth=120
 
 set smartindent
