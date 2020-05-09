@@ -1,33 +1,23 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Shirk/vim-gas'
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml'
-Plug 'chriskempson/base16-vim'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
-Plug 'igankevich/mesonic'
 Plug 'itchyny/lightline.vim'
-Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-Plug 'lervag/vimtex', { 'for': 'tex' }
-Plug 'lervag/wiki-ft.vim', { 'for': 'wiki' }
-Plug 'lervag/wiki.vim'
-Plug 'mattia72/vim-delphi', { 'for': 'pascal' }
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'pboettch/vim-cmake-syntax'
 Plug 'robertmeta/nofrils'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 call plug#end()
 
 " Tab settings
@@ -115,7 +105,6 @@ nnoremap <leader><space> :nohlsearch<cr>
 
 nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>ec :edit $HOME/.config/nvim/colors/atmosphere.vim<cr>
 nnoremap <space> za
 
 " Make j and k not ignore wrapped parts of lines
@@ -132,22 +121,6 @@ set noshowmode
 " fzf
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>bf :Buffers<cr>
-
-augroup ruby_mappings
-  autocmd!
-  autocmd FileType ruby nnoremap <buffer> <leader>a :FZF app<cr>
-  autocmd FileType ruby nnoremap <buffer> <leader>s :FZF spec<cr>
-augroup END
-
-" vimtex
-"
-" neovim doesn't support --remote and compiled withut clientserver anyway, nvr
-" is a tool written in python that serves as a workaround.
-let g:vimtex_compiler_progname = 'nvr'
-" Sometimes tex files detected as plaintext, this option prevents it
-let g:tex_flavor = 'latex'
-let g:vimtex_view_method = 'zathura'
-let g:vimtex_complete_enabled = 0
 
 " Golang
 let g:go_highlight_build_constraints = 1
@@ -171,25 +144,6 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
-
-" I don't have 'sml' binary, so
-let g:sml_smlnj_executable = '/usr/bin/smlnj'
-let g:sml_auto_create_def_use = 'always'
-
-augroup smlMaps
-  au!
-  au FileType sml nnoremap <leader>t :SMLTypeQuery<CR>
-  au FileType sml nnoremap gd :SMLJumpToDef<CR>
-
-  au FileType sml nnoremap <silent> <buffer> <leader>is :SMLReplStart<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>ik :SMLReplStop<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>if :SMLReplBuild<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>io :SMLReplOpen<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>iu :SMLReplUse<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>ic :SMLReplClear<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>ip :SMLReplPrintDepth<CR>
-  au FileType sml nnoremap <silent> <buffer> <leader>iz :SMLReplShell<CR>
-augroup END
 
 " Ale
 nmap <silent> <f3> <Plug>(ale_next_wrap)
@@ -229,7 +183,7 @@ nmap <silent> gd <Plug>(coc-definition)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'OldHope',
+      \ 'colorscheme': 'PaperColor_light',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
@@ -238,9 +192,6 @@ let g:lightline = {
 function! FilenameForLightline()
   return expand('%')
 endfunction
-
-" wiki.vim
-let g:wiki_root = '~/notes'
 
 " nvim-colorizer
 lua require 'colorizer'.setup({'yaml';'vim';})
