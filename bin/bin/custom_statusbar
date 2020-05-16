@@ -2,8 +2,10 @@
 
 while true
 do
+  cpu=$(sensors | awk '/^Core 0:/ { print $3 }')
+  mem=$(free -h | awk '/^Mem:/ { print $3 " / " $2 " (" $4 " free)" }')
   time=$(date +"%A %Y-%m-%d %I:%M %p")
   bat=$(cat /sys/class/power_supply/BAT0/capacity)
-  printf "%s | Bat %s%%" "${time}" "${bat}"
-  sleep 120
+  printf "CPU: %s | Memory: %s | %s | Bat %s%%" "${cpu}" "${mem}" "${time}" "${bat}"
+  sleep 60
 done
