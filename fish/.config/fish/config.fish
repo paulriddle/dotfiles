@@ -10,3 +10,4 @@ set -x MANPAGER "nvim -c 'set ft=man' -"
 
 set -x DOCKER_TLD localhost
 set -x _JAVA_AWT_WM_NONREPARENTING 1
+set -x FONTCONFIG_PATH /etc/fonts
