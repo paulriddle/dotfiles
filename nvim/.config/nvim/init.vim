@@ -107,6 +107,9 @@ nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <space> za
 
+" Spellcheck
+nnoremap <leader>o :setlocal spell! spelllang=en_us<cr>
+
 " Make j and k not ignore wrapped parts of lines
 nnoremap j gj
 nnoremap k gk
