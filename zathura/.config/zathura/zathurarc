@@ -1,3 +1,0 @@
-set synctex true
-set synctex-editor-command "code -g %{input}:%{line}"
-map <C-i> recolor
