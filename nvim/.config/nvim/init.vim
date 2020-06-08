@@ -161,7 +161,8 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'c': ['clang-format'],
-      \ 'cpp': ['clang-format']
+      \ 'cpp': ['clang-format'],
+      \ 'go': ['gofmt']
       \ }
 let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
 
