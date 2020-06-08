@@ -1,1 +1,1 @@
-/home/paulriddle/.fzf/shell/key-bindings.fish
+/home/ripsec/.fzf/shell/key-bindings.fish
