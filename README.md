@@ -16,7 +16,16 @@ sudo update-alternatives --config editor
 and pick nvim.
 
 For stow to work you'd have to create a ~/.stowrc with
+
 ```
 --target=/home/ripsec
 ```
+
 in it.
+
+Neovim uses vim-plug, so
+
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
