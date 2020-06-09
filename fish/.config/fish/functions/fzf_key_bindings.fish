@@ -1,1 +1,0 @@
-/home/ripsec/.fzf/shell/key-bindings.fish
