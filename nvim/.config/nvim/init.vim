@@ -3,6 +3,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
