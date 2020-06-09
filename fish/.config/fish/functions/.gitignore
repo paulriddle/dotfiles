@@ -1,3 +1,4 @@
 __bass.py
 __nvm_run.fish
 nvm_alias_command.fish
+fzf_key_bindings.fish
