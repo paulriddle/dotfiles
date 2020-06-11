@@ -1,3 +1,4 @@
 conf.d/
 functions/fish_prompt.fish
+completions/asdf.fish
 fish_variables
