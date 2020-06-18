@@ -9,7 +9,5 @@
       "filetypes": ["c", "cpp", "objc", "objcpp"]
     }
   },
-  "tsserver.npm": "/usr/bin/npm",
-  "latex.forwardSearch.executable": "zathura",
-  "latex.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"]
+  "tsserver.npm": "/usr/bin/npm"
 }
