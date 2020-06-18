@@ -15,6 +15,38 @@ font:
   size: 12.0
 
 schemes:
+  google_dark: &google_dark
+    primary:
+      background: '#1d1f21'
+      foreground: '#c5c8c6'
+    cursor:
+      text:    '#1d1f21'
+      cursor:  '#c5c8c6'
+    normal:
+      black:   '#1d1f21'
+      red:     '#cc342b'
+      green:   '#198844'
+      yellow:  '#fba922'
+      blue:    '#3971ed'
+      magenta: '#a36ac7'
+      cyan:    '#3971ed'
+      white:   '#c5c8c6'
+    bright:
+      black:   '#969896'
+      red:     '#cc342b'
+      green:   '#198844'
+      yellow:  '#fba922'
+      blue:    '#3971ed'
+      magenta: '#a36ac7'
+      cyan:    '#3971ed'
+      white:   '#ffffff'
+    indexed_colors:
+      - { index: 16, color: '#f96a38' }
+      - { index: 17, color: '#3971ed' }
+      - { index: 18, color: '#282a2e' }
+      - { index: 19, color: '#373b41' }
+      - { index: 20, color: '#b4b7b4' }
+      - { index: 21, color: '#e0e0e0' }
   nofrils_acme: &nofrils_acme
     primary:
       background: '#ffdfaf'
@@ -65,7 +97,7 @@ schemes:
       cyan:    '#86c1b9'
       white:   '#f8f8f8'
 
-colors: *base16_default
+colors: *google_dark
 
 draw_bold_text_with_bright_colors: false
 
