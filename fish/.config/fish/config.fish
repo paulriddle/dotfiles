@@ -6,7 +6,6 @@ set -x FZF_DEFAULT_OPTS '--height 30%'
 
 set -x NVIM_LISTEN_ADDRESS /tmp/nvimsocket
 set -x EDITOR nvim
-set -x MANPAGER "nvim -c 'set ft=man' -"
 
 set -x DOCKER_TLD localhost
 set -x _JAVA_AWT_WM_NONREPARENTING 1
