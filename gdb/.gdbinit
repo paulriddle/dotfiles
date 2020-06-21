@@ -1,1 +1,1 @@
-source /usr/share/gef/gef.py
+source ~/.gdbinit-gef.py
