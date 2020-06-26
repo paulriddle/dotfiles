@@ -10,5 +10,6 @@ set -x EDITOR nvim
 set -x DOCKER_TLD localhost
 set -x _JAVA_AWT_WM_NONREPARENTING 1
 set -x FONTCONFIG_PATH /etc/fonts
+set -x GPG_TTY (tty)
 
 source ~/.asdf/asdf.fish
