@@ -7,12 +7,12 @@ window:
 
 font:
   normal:
-    family: Dina
+    family: Hack
   bold:
-    family: Dina
+    family: Hack
   italic:
-    family: Dina
-  size: 10.0
+    family: Hack
+  size: 12.0
 
 schemes:
   google_dark: &google_dark
@@ -97,7 +97,7 @@ schemes:
       cyan:    '#86c1b9'
       white:   '#f8f8f8'
 
-colors: *google_dark
+colors: *base16_default
 
 draw_bold_text_with_bright_colors: false
 

@@ -33,6 +33,7 @@ autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
 
 autocmd FileType ruby setlocal textwidth=120
 
+set textwidth=80
 set smartindent
 " Jump to the matching bracket for 0.5 second when inserting new one
 set showmatch
@@ -94,7 +95,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme base16-google-dark
+colorscheme grb24bit
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
