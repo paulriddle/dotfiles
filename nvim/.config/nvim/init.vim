@@ -32,6 +32,7 @@ autocmd FileType gitcommit  setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
 
 autocmd FileType ruby setlocal textwidth=120
+autocmd FileType javascript setlocal textwidth=100
 
 set textwidth=80
 set smartindent
