@@ -163,9 +163,13 @@ let g:ale_fixers = {
       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'c': ['clang-format'],
       \ 'cpp': ['clang-format'],
-      \ 'go': ['gofmt']
+      \ 'go': ['gofmt'],
+      \ 'javascript': ['prettier']
       \ }
 let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
+let g:ale_javascript_prettier_use_global = 1
+let g:ale_javascript_prettier_executable = 'yarn'
+let g:ale_javascript_prettier_options = 'run prettier'
 
 " coc.nvim
 " Tab to trigger completion
