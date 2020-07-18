@@ -21,6 +21,8 @@ floating_modifier $alt normal
 bindsym $win+Shift+c reload
 # Exit sway (logs you out of your wayland session)
 bindsym $win+Shift+e exit
+# Take screenshot
+bindsym $win+p exec grimshot save area
 
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
