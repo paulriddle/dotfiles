@@ -28,8 +28,8 @@ autocmd FileType c          setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType gitcommit  setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
-
-autocmd FileType ruby setlocal textwidth=120
+autocmd FileType ruby       setlocal textwidth=120
+autocmd BufNewFile,BufRead *.gohtml set syntax=html
 
 set smartindent
 " Jump to the matching bracket for 0.5 second when inserting new one
