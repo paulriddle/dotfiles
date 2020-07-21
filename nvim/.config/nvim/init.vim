@@ -1,11 +1,10 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -143,26 +142,6 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
-
-" Ale
-nmap <silent> <f3> <Plug>(ale_next_wrap)
-nmap <silent> <f4> <Plug>(ale_previous_wrap)
-nmap <leader>a <Plug>(ale_fix)
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
-let g:ale_lint_on_save = 1
-let g:ale_linters_explicit = 1
-let g:ale_disable_lsp = 1
-let g:ale_linters = {
-      \ 'ruby': [],
-      \ 'c': [],
-      \ }
-let g:ale_fixers = {
-      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \ 'c': ['clang-format'],
-      \ 'cpp': ['clang-format']
-      \ }
-let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
 
 " coc.nvim
 " Tab to trigger completion
