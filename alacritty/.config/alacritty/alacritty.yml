@@ -7,11 +7,11 @@ window:
 
 font:
   normal:
-    family: Rec Mono Linear
+    family: Liberation Mono
   bold:
-    family: Rec Mono Linear
+    family: Liberation Mono
   italic:
-    family: Rec Mono Linear
+    family: Liberation Mono
   size: 12.0
 
 schemes:
