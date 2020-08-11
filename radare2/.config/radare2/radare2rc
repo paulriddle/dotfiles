@@ -1,2 +1,2 @@
 e stack.size = 256
-e asm.syntax = att
+e asm.syntax = intel
