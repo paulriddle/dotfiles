@@ -1,71 +1,73 @@
-# Mpd1 is Alt.
-# Mod4 is Win.
+# This comment makes ft=conf in vim
 
-# Mouse+Mod1 to drag floating windows.
-floating_modifier Mod1
+set $win Mod4
+set $alt Mod1
 
-bindsym Mod1+Return exec alacritty
-bindsym Mod1+d exec dmenu_run -fn 'Dina-8'
+# Mouse+$alt to drag floating windows.
+floating_modifier $alt
+
+bindsym $alt+Return exec alacritty
+bindsym $alt+d exec dmenu_run -fn 'Dina-12'
 
 # Kill focused window.
-bindsym Mod4+q kill
-bindsym Mod4+f fullscreen
+bindsym $win+q kill
+bindsym $win+f fullscreen
 
 # Switch with Alt-hjkl
-bindsym Mod1+h focus left
-bindsym Mod1+j focus down
-bindsym Mod1+k focus up
-bindsym Mod1+l focus right
+bindsym $alt+h focus left
+bindsym $alt+j focus down
+bindsym $alt+k focus up
+bindsym $alt+l focus right
 
 # Shuffle windows with Win-hjkl
-bindsym Mod4+h move left
-bindsym Mod4+j move down
-bindsym Mod4+k move up
-bindsym Mod4+l move right
+bindsym $win+h move left
+bindsym $win+j move down
+bindsym $win+k move up
+bindsym $win+l move right
 
-bindsym Mod1+z split h
-bindsym Mod1+v split v
+bindsym $alt+z split h
+bindsym $alt+v split v
 
-bindsym Mod1+w layout tabbed
-bindsym Mod1+e layout toggle split
+bindsym $alt+w layout tabbed
+bindsym $alt+e layout toggle split
 
-bindsym Mod4+space floating toggle
-bindsym Mod1+space focus mode_toggle
-bindsym Mod1+a focus parent
+bindsym $win+space floating toggle
+bindsym $alt+space focus mode_toggle
+bindsym $alt+a focus parent
 
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 
-bindsym Mod1+1 workspace 1
-bindsym Mod1+2 workspace 2
-bindsym Mod1+3 workspace 3
-bindsym Mod1+4 workspace 4
-bindsym Mod1+5 workspace 5
-bindsym Mod1+6 workspace 6
-bindsym Mod1+7 workspace 7
-bindsym Mod1+8 workspace 8
-bindsym Mod1+9 workspace 9
-bindsym Mod1+0 workspace 10
+bindsym $alt+1 workspace 1
+bindsym $alt+2 workspace 2
+bindsym $alt+3 workspace 3
+bindsym $alt+4 workspace 4
+bindsym $alt+5 workspace 5
+bindsym $alt+6 workspace 6
+bindsym $alt+7 workspace 7
+bindsym $alt+8 workspace 8
+bindsym $alt+9 workspace 9
+bindsym $alt+0 workspace 10
 
-bindsym Mod4+1 move container to workspace 1
-bindsym Mod4+2 move container to workspace 2
-bindsym Mod4+3 move container to workspace 3
-bindsym Mod4+4 move container to workspace 4
-bindsym Mod4+5 move container to workspace 5
-bindsym Mod4+6 move container to workspace 6
-bindsym Mod4+7 move container to workspace 7
-bindsym Mod4+8 move container to workspace 8
-bindsym Mod4+9 move container to workspace 9
-bindsym Mod4+0 move container to workspace 10
+bindsym $win+1 move container to workspace 1
+bindsym $win+2 move container to workspace 2
+bindsym $win+3 move container to workspace 3
+bindsym $win+4 move container to workspace 4
+bindsym $win+5 move container to workspace 5
+bindsym $win+6 move container to workspace 6
+bindsym $win+7 move container to workspace 7
+bindsym $win+8 move container to workspace 8
+bindsym $win+9 move container to workspace 9
+bindsym $win+0 move container to workspace 10
 
-bindsym Mod4+c reload
-bindsym Mod4+r restart
-bindsym Mod4+Shift+e exit
+bindsym $win+c reload
+bindsym $win+r restart
+bindsym $win+Shift+e exit
 
-bindsym Mod4+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $win+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Pixel borders, with no borders on the sides of display
-default_border pixel 1
+default_border pixel
 default_floating_border pixel 1
 hide_edge_borders both
 
@@ -83,10 +85,10 @@ mode "resize" {
   bindsym Escape mode "default"
 }
 
-bindsym Mod1+r mode "resize"
+bindsym $alt+r mode "resize"
 
 bar {
   status_command i3status
   tray_output primary
-  font xft:Dina, FontAwesome 8
+  font xft:Dina 10
 }

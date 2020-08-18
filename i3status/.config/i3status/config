@@ -1,0 +1,10 @@
+general {
+        colors = true
+        interval = 5
+}
+
+order += "battery all"
+
+battery all {
+        format = "%status %percentage"
+}
