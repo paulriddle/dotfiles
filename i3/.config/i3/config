@@ -6,7 +6,7 @@ set $alt Mod1
 # Mouse+$alt to drag floating windows.
 floating_modifier $alt
 
-bindsym $alt+Return exec alacritty
+bindsym $alt+Return exec alacritty --config-file ~/.config/alacritty/x11_alacritty.yml
 bindsym $alt+d exec dmenu_run -fn 'Dina-12'
 
 # Kill focused window.
