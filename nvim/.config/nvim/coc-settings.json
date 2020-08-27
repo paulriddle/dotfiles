@@ -1,4 +1,4 @@
 {
-  "diagnostic.displayByAle": true,
+  "diagnostic.displayByAle": false,
   "diagnostic.refreshAfterSave": true
 }
