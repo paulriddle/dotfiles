@@ -125,7 +125,7 @@ nnoremap <leader>bf :Buffers<cr>
 
 " Golang
 let g:go_highlight_build_constraints = 1
-let g:go_gopls_enabled = 0
+let g:go_gopls_enabled = 1
 
 augroup go_mappings
   autocmd!
