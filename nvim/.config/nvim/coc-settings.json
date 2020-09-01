@@ -1,3 +1,12 @@
 {
-  "diagnostic.refreshAfterSave": true
+  "diagnostic.refreshAfterSave": false,
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "disableWorkspaceFolders": true,
+      "filetypes": ["go"]
+    }
+  },
+  "go.enable": false
 }

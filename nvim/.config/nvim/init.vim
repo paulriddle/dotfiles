@@ -123,6 +123,9 @@ nnoremap <leader>bf :Buffers<cr>
 " Golang
 let g:go_highlight_build_constraints = 1
 
+" Python
+let g:python3_host_prog = '/home/ripsec/.asdf/shims/python3'
+
 augroup go_mappings
   autocmd!
   autocmd FileType go nnoremap <buffer> <leader>t :GoTestFunc<cr>
