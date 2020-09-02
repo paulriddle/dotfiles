@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
@@ -126,6 +127,32 @@ let g:go_highlight_build_constraints = 1
 " Python
 let g:python3_host_prog = '/home/ripsec/.asdf/shims/python3'
 
+" Ale
+nmap <silent> <f3> <Plug>(ale_next_wrap)
+nmap <silent> <f4> <Plug>(ale_previous_wrap)
+nmap <leader>a <Plug>(ale_fix)
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_save = 1
+let g:ale_linters_explicit = 1
+let g:ale_disable_lsp = 1
+let g:ale_linters = {
+      \ 'c': [],
+      \ }
+
+let g:ale_fixers = {
+      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'c': ['clang-format'],
+      \ 'cpp': ['clang-format'],
+      \ 'go': ['gofmt'],
+      \ 'javascript': ['prettier']
+      \ }
+let g:ale_ruby_rubocop_options = '--config ~/.config/rubocop/ruby.yml --cache true'
+let g:ale_javascript_prettier_use_global = 1
+let g:ale_javascript_prettier_executable = 'yarn'
+let g:ale_javascript_prettier_options = 'run prettier'
+
 augroup go_mappings
   autocmd!
   autocmd FileType go nnoremap <buffer> <leader>t :GoTestFunc<cr>
@@ -145,6 +172,8 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
+
+nmap <silent> gd <Plug>(coc-definition)
 
 " coc.nvim
 " Tab to trigger completion
