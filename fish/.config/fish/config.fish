@@ -8,5 +8,6 @@ set -x EDITOR nvim
 
 set -x DOCKER_TLD localhost
 set -x FONTCONFIG_PATH /etc/fonts
+set -x BAT_THEME base16
 
 source ~/.asdf/asdf.fish
