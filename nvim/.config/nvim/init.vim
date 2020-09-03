@@ -93,7 +93,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme nofrils-acme
+colorscheme paulriddle-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -102,6 +102,7 @@ nnoremap <leader><space> :nohlsearch<cr>
 
 nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ea :edit ~/.config/nvim/colors/paulriddle-acme.vim<cr>
 nnoremap <space> za
 
 " Spellcheck
