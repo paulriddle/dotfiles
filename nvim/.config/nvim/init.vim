@@ -203,4 +203,4 @@ function! FilenameForLightline()
 endfunction
 
 " nvim-colorizer
-lua require 'colorizer'.setup({'yaml';'vim';})
+lua require 'colorizer'.setup({'yaml';'vim';'conf';})
