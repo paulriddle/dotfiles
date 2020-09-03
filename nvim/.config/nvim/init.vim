@@ -10,6 +10,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'robertmeta/nofrils'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -92,7 +93,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme grb24bit
+colorscheme nofrils-acme
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
@@ -190,7 +191,7 @@ endfunction
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor_dark',
+      \ 'colorscheme': 'solarized',
       \ 'component_function': {
       \   'filename': 'FilenameForLightline'
       \ }
