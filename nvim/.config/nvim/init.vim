@@ -93,7 +93,7 @@ set relativenumber
 " Required by the current colorscheme
 set termguicolors
 let base16colorspace=256
-colorscheme paulriddle-acme
+colorscheme nofrils-dark
 
 " Toggle invisible characters
 nnoremap <leader>l :set list!<cr>
