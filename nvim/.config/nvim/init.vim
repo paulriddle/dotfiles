@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
+Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'sheerun/vim-polyglot'
@@ -202,3 +203,10 @@ endfunction
 
 " nvim-colorizer
 lua require 'colorizer'.setup({'yaml';'vim';})
+
+" Must specify, otherwise vimtex will complain. It is to resolve the ambiguity
+" when determining the filetype, which is tex for .tex files by default. tex is
+" not what I want because vimtex doesn't autostart for tex. It autostarts for
+" latex though.
+let g:tex_flavor = 'latex'
+let g:vimtex_compiler_method = 'tectonic'
