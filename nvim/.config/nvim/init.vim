@@ -25,13 +25,14 @@ set softtabstop=2 "  sts
 set shiftwidth=2  "  sw
 autocmd FileType go         setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab
-autocmd FileType c          setlocal ts=4 sts=4 sw=4 expandtab
-autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType c          setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType gitcommit  setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
 
 autocmd FileType ruby setlocal textwidth=120
 autocmd FileType javascript setlocal textwidth=100
+autocmd FileType html setlocal textwidth=0
 
 set textwidth=80
 set smartindent
@@ -202,7 +203,7 @@ function! FilenameForLightline()
 endfunction
 
 " nvim-colorizer
-lua require 'colorizer'.setup({'yaml';'vim';})
+lua require 'colorizer'.setup({'yaml';'vim';'css';'scss';})
 
 " Must specify, otherwise vimtex will complain. It is to resolve the ambiguity
 " when determining the filetype, which is tex for .tex files by default. tex is
