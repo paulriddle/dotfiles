@@ -4,12 +4,8 @@ AccessModifierOffset: 0
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: true
 AlignConsecutiveDeclarations: false
-<<<<<<< HEAD
-AlignEscapedNewlines: Left
-=======
 AlignConsecutiveMacros: true
 AlignEscapedNewlines: Right
->>>>>>> parent of 4b70c95... .clang-format now based on linux kernel's
 AlignOperands: true
 AlignTrailingComments: true
 AllowAllParametersOfDeclarationOnNextLine: false
@@ -33,21 +29,12 @@ BraceWrapping:
   AfterFunction:   false
   AfterNamespace:  false
   AfterObjCDeclaration: false
-<<<<<<< HEAD
-  AfterStruct: false
-  AfterUnion: false
-  AfterExternBlock: false
-  BeforeCatch: false
-  BeforeElse: false
-  IndentBraces: false
-=======
   AfterStruct:     false
   AfterUnion:      false
   AfterExternBlock: true
   BeforeCatch:     false
   BeforeElse:      true
   IndentBraces:    false
->>>>>>> parent of 4b70c95... .clang-format now based on linux kernel's
   SplitEmptyFunction: true
   SplitEmptyRecord: true
   SplitEmptyNamespace: true
