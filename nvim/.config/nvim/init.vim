@@ -25,8 +25,8 @@ set softtabstop=2 "  sts
 set shiftwidth=2  "  sw
 autocmd FileType go         setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab
-autocmd FileType c          setlocal ts=4 sts=4 sw=4 noexpandtab
-autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType c          setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType cpp        setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType gitcommit  setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType delphi     setlocal ts=4 sts=4 sw=4 noexpandtab
 
