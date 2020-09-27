@@ -1,4 +1,5 @@
 # This comment makes ft=conf
+exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 set $win Mod4
 set $alt Mod1
 
