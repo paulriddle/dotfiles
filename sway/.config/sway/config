@@ -1,5 +1,6 @@
 # This comment makes ft=conf
 exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
+exec_always --no-startup-id flashfocus
 set $win Mod4
 set $alt Mod1
 
@@ -24,6 +25,8 @@ bindsym $win+Shift+c reload
 bindsym $win+Shift+e exit
 # Take screenshot
 bindsym $win+p exec grimshot save area
+# Highlight current window for a second
+bindsym $win+c exec --no-startup-id flash_window
 
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
