@@ -13,4 +13,6 @@ set -x FONTCONFIG_PATH /etc/fonts
 set -x GPG_TTY (tty)
 set -x BAT_THEME TwoDark
 
+set -x CALIBRE_DEVELOP_FROM /home/paulriddle/code/calibre/src
+
 source ~/.asdf/asdf.fish
