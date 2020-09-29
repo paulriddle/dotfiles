@@ -233,8 +233,8 @@ key_bindings:
   - { key: F1,       mods: Super,   chars: "\x1b[1;3P"                   }
   - { key: F2,       mods: Super,   chars: "\x1b[1;3Q"                   }
   - { key: F3,       mods: Super,   chars: "\x1b[1;3R"                   }
-  - { key: F4,       mods: Super,   chars: "\x1b[1;3S"                   }
-  - { key: F5,       mods: Super,   chars: "\x1b[15;3~"                  }
+  - { key: F4,                      chars: "\x1b[1;3S"                   }
+  - { key: F5,                      chars: "\x1b[15;3~"                  }
   - { key: F6,       mods: Super,   chars: "\x1b[17;3~"                  }
   - { key: F7,       mods: Super,   chars: "\x1b[18;3~"                  }
   - { key: F8,       mods: Super,   chars: "\x1b[19;3~"                  }
