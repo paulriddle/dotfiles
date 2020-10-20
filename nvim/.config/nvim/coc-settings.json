@@ -7,10 +7,6 @@
       "rootPatterns": ["go.mod"],
       "disableWorkspaceFolders": true,
       "filetypes": ["go"]
-    },
-    "zls" : {
-      "command": "/usr/bin/zls",
-      "filetypes": ["zig"]
     }
   },
   "go.enable": false
