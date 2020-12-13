@@ -9,12 +9,12 @@ window:
 # TODO: Font hinting
 font:
   normal:
-    family: Liberation Mono
+    family: Dina
   bold:
-    family: Liberation Mono
+    family: Dina
   italic:
-    family: Liberation Mono
-  size: 8.0
+    family: Dina
+  size: 9.0
 
 schemes:
   google_dark: &google_dark
@@ -146,7 +146,6 @@ key_bindings:
   - { key: Insert,   mods: Shift,   action: PasteSelection               }
   - { key: Key0,     mods: Control, action: ResetFontSize                }
   - { key: Equals,   mods: Control, action: IncreaseFontSize             }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }
   - { key: End,                     chars: "\x1bOF",   mode: AppCursor   }
@@ -233,8 +232,8 @@ key_bindings:
   - { key: F1,       mods: Super,   chars: "\x1b[1;3P"                   }
   - { key: F2,       mods: Super,   chars: "\x1b[1;3Q"                   }
   - { key: F3,       mods: Super,   chars: "\x1b[1;3R"                   }
-  - { key: F4,       mods: Super,   chars: "\x1b[1;3S"                   }
-  - { key: F5,       mods: Super,   chars: "\x1b[15;3~"                  }
+  - { key: F4,                      chars: "\x1b[1;3S"                   }
+  - { key: F5,                      chars: "\x1b[15;3~"                  }
   - { key: F6,       mods: Super,   chars: "\x1b[17;3~"                  }
   - { key: F7,       mods: Super,   chars: "\x1b[18;3~"                  }
   - { key: F8,       mods: Super,   chars: "\x1b[19;3~"                  }
