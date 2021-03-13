@@ -7,7 +7,7 @@ set $alt Mod1
 floating_modifier $alt
 
 bindsym $alt+Return exec alacritty --config-file ~/.config/alacritty/x11_alacritty.yml
-bindsym $alt+d exec dmenu_run -fn 'Dina-12'
+bindsym $alt+d exec dmenu_run -fn 'Hack-12'
 
 # Kill focused window.
 bindsym $win+q kill
@@ -34,6 +34,9 @@ bindsym $alt+e layout toggle split
 bindsym $win+space floating toggle
 bindsym $alt+space focus mode_toggle
 bindsym $alt+a focus parent
+
+# Take screenshot
+bindsym $win+p exec "flameshot gui"
 
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
@@ -90,5 +93,5 @@ bindsym $alt+r mode "resize"
 bar {
   status_command i3status
   tray_output primary
-  font xft:Dina 10
+  font xft:Hack 10
 }

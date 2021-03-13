@@ -9,11 +9,11 @@ window:
 # TODO: Font hinting
 font:
   normal:
-    family: Dina
+    family: Hack
   bold:
-    family: Dina
+    family: Hack
   italic:
-    family: Dina
+    family: Hack
   size: 9.0
 
 schemes:

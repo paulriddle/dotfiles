@@ -35,7 +35,7 @@ autocmd FileType ruby setlocal textwidth=120
 autocmd FileType javascript setlocal textwidth=100
 autocmd FileType html setlocal textwidth=0
 
-set textwidth=80
+" set textwidth=80
 set smartindent
 " Jump to the matching bracket for 0.5 second when inserting new one
 set showmatch

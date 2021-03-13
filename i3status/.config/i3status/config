@@ -3,8 +3,26 @@ general {
         interval = 5
 }
 
-order += "battery all"
+order += "disk /"
+order += "disk /home"
+order += "memory"
+order += "time"
 
-battery all {
-        format = "%status %percentage"
+disk "/" {
+        format = "/: %free"
 }
+
+disk "/home" {
+        format = "/home: %free"
+}
+
+memory {
+        format = "Mem: %used / %total"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
+}
+
+time {
+        format = "%a, %d %b %Y %T %z"
+}
+
